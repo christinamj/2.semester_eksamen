@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media only screen and (min-width:600px) {
+            #splash_kontakt {
+                height: 50vw;
+            }
+
+            #findos h1 {
+                padding-bottom: 2vw;
+                font-size: 1.5em;
+            }
+
+        }
+
+        @media only screen and (min-width:751px) {
+            #splash_kontakt {
+                height: 30vw;
+            }
+
+            #kontakt {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin: 35px 50px;
+            }
+
+            #kontakt .book_knap {
+                height: 5vw;
+                width: 20vw;
+                font-size: 0.8em;
+                padding-top: 1.6vw;
+            }
+
+            #menuknap {
+                transform: scale(0);
+                display: none;
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            #kontakt h1 {
+                padding: 0;
+                padding-top: 2.5vw;
+            }
+
+            #kontakt h3 {
+                padding-bottom: 0;
+                padding-top: 3vw;
+            }
+
+            body main #kontakt_billede {
+                padding-top: 3vw;
+            }
+
+            .book_knap {
+                margin-top: 4vw;
+            }
+
+            #kort_billede {
+                margin-top: 8vw;
+                padding-top: 0;
+            }
+
+            .kontakt_tekst {
+                height: 55vw;
+            }
+
+            #kontakt_billede {
+                height: 55vw;
+            }
+
+            #findos {
+                margin: 35px 50px;
+            }
+
+        }
+
+
+        @media only screen and (max-width:970px) {
+            nav {
+                font-size: 0.8em;
+            }
+        }
+
+        @media only screen and (max-width:750px) {
+
+            .billedekontakt,
+            .borderkontakt {
+                transform: scale(0);
+                display: none;
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+
+            nav {
+                transform: scale(0);
+                display: none;
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            #kontakt {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        @media only screen and (min-width:1195px) {
+            #findos p {
+                padding-right: 15vw;
+            }
+
+            main {
+                margin: 35px 100px;
+            }
+
+            .billedekontakt {
+                height: 35vw;
+                width: 36vw;
+            }
+
+            .borderkontakt {
+                height: 35vw;
+                width: 36vw;
+                top: -30vw;
+                left: 5vw;
+            }
+
+            #kort_billede {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="kontakt_id">
+    <header>
+        <section id="splash3">
+
+            <div id="splash_kontakt">
+                <div id="menuknap">☰</div>
+            </div>
+        </section>
+        <nav>
+            <div id="menu">
+                <a href="forside.html">Forside</a>
+                <a href="galleri.html">Galleri</a>
+                <div>
+                    <p>HJALMAR <br>HJALMARSSON</p>
+                </div>
+                <a href="omos.html">Om os</a>
+
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+
+            <div class="book_header">Book et møde</div>
+        </nav>
+
+    </header>
+    <div id="container_kontakt">
+        <main>
+            <section id="kontakt">
+                <div class="kontakt_tekst">
+                    <h1>KONTAKT</h1>
+                    <h3>ADRESSE</h3>
+                    <p>Ndr. Frihavnsgade 14<br>
+                        2100 København Ø</p>
+                    <h3>TELEFON</h3>
+                    <p>+45 35384530</p>
+                    <h3>EMAIL</h3>
+                    <p>Hjalmar@hjalmarsson.dk</p>
+                    <h3>ÅBNINGSTIDER</h3>
+                    <p>Mandag til fredag: 10.30 - 17.30<br>
+                        Lørdag: 10.30 - 13.30</p>
+
+                    <div class="book_knap">Book et møde</div>
+                </div>
+
+                <div id="kontakt_billede">
+
+                    <div class="billedekontakt"></div>
+                    <div class="borderkontakt">
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+        <section id="kort">
+            <div id="kort_billede"></div>
+        </section>
+        <main>
+            <section id="findos">
+                <h1>HER FINDER DU OS</h1>
+                <p>Noget om hvor han ligger og parkering. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia ccusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
+            </section>
+        </main>
+    </div>
+
+    <footer></footer>
+    <script src=""></script>
+</body></html>

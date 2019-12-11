@@ -1,0 +1,211 @@
+/*GENEREL STYLING................. */
+
+
+* {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 35px 50px;
+}
+
+header nav a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+header nav a:visited {
+    text-decoration: none;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75vw;
+    padding-left: 10vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    color: white;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.38);
+    /*    padding: 35px 190px;*/
+
+}
+
+nav a {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 0.9em;
+    padding-top: 1vw;
+    color: white;
+}
+
+nav p {
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+
+}
+
+.book_header {
+    height: 3.3vw;
+    width: 12vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+    color: black;
+    font-size: 0.7em;
+}
+
+
+
+
+footer {
+    height: 20vw;
+    background-color: #8B8A88;
+    margin-top: 5vw;
+}
+
+p {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+h1 {
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-size: 1.5em;
+}
+
+
+#menuknap {
+    font-size: 2.4em;
+    margin: 0px 15px;
+    color: white;
+
+}
+
+/*KONTAKTSIDEN STARTER HER...........*/
+
+.kontakt_tekst {
+    padding-right: 5vw;
+}
+
+#splash_kontakt {
+    background-image: url(img/kontakt_placeholderm.jpg);
+    height: 66vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+#kort_billede {
+    background-image: url(img/Rectangle%20206.png);
+    height: 30vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10vw;
+}
+
+#kontakt h1 {
+    color: #011EE2;
+    padding-bottom: 5vw;
+    font-size: 1.5em;
+}
+
+#findos h1 {
+    color: #D3C7AC;
+    padding-bottom: 4vw;
+}
+
+#kontakt h3 {
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1rem;
+    padding-top: 5vw;
+}
+
+#kontakt {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.book_knap {
+    height: 7vw;
+    width: 30vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    margin-top: 10vw;
+    font-size: 0.9em;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.billedekontakt {
+    height: 49vw;
+    width: 36vw;
+    background-image: url(img/billedeom3.png);
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 12vw;
+}
+
+
+#kort {
+    grid-area: kort;
+}
+
+.borderkontakt {
+    height: 42vw;
+    width: 36vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3C7AC;
+    position: relative;
+    z-index: auto;
+    top: -38vw;
+    left: 5vw;
+}
+
+#findos {
+    grid-area: find;
+}
