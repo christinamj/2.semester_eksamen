@@ -62,12 +62,18 @@ header nav a:visited {
     text-decoration: none;
 }
 
+#menu a,
+#menu div {
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 75vw;
-    padding-left: 10vw;
+    justify-content: center;
+    padding-left: 13vw;
+    height: 5vw;
 }
 
 nav {
@@ -117,6 +123,9 @@ nav p {
     padding-top: 1vw;
     color: black;
     font-size: 0.7em;
+    position: relative;
+    top: -1.5vw;
+    left: 8vw;
 }
 
 
@@ -149,6 +158,10 @@ footer {
 
 
 /*KONTAKTSIDEN STARTER HER...........*/
+
+#kontakt_billede {
+    display: none;
+}
 
 .kontakt_tekst {
     padding-right: 5vw;
@@ -195,7 +208,6 @@ footer {
 
 #kontakt {
     display: flex;
-    flex-direction: row-reverse;
 }
 
 .book_knap {
@@ -347,9 +359,13 @@ footer {
         font-size: 1.5em;
     }
 
+
+
 }
 
 @media only screen and (min-width:500px) {
+
+
 
     .billedeom3 {
         background-size: 80%;
@@ -381,11 +397,13 @@ footer {
 
 
 @media only screen and (min-width:751px) {
+    #kontakt_billede {
+        display: block;
+    }
 
     nav {
         display: block;
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row-reverse;
         width: 100vw;
         padding-top: 2vw;
         padding-bottom: 2vw;
@@ -393,7 +411,9 @@ footer {
         position: absolute;
         top: 0;
         background-color: rgba(0, 0, 0, 0.38);
+        position: fixed;
     }
+
 
     footer {
         padding: 35px 105px;
@@ -407,6 +427,7 @@ footer {
 
         margin: 35px;
     }
+
 
     .omtekst1 {
         width: 40vw;
