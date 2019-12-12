@@ -15,11 +15,46 @@ html {
 }
 
 main {
-    margin: 35px 50px;
+    margin: 35px 55px;
 }
 
 header nav a:link {
     text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+nav a:visited {
+    color: white;
+}
+
+p {
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+h1 {
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-size: 1.5em;
+}
+
+
+#menuknap {
+    font-size: 2.4em;
+    margin: 0px 15px;
+    color: white;
+
 }
 
 /* visited link */
@@ -36,6 +71,8 @@ header nav a:visited {
 }
 
 nav {
+    display: none;
+    /*
     display: flex;
     justify-content: space-around;
     width: 100vw;
@@ -45,6 +82,7 @@ nav {
     position: absolute;
     top: 0;
     background-color: rgba(0, 0, 0, 0.38);
+*/
     /*    padding: 35px 190px;*/
 
 }
@@ -85,33 +123,30 @@ nav p {
 
 
 footer {
-    height: 20vw;
     background-color: #8B8A88;
     margin-top: 5vw;
-}
-
-p {
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-}
-
-
-h1 {
-    font-family: gopher, sans-serif;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 1.2rem;
-    font-size: 1.5em;
-}
-
-
-#menuknap {
-    font-size: 2.4em;
-    margin: 0px 15px;
-    color: white;
+    font-size: 0.8em;
+    padding-left: 15vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 
 }
+
+.abningstider {
+    grid-area: abningstider;
+}
+
+.kontaktopslysning {
+    grid-area: kontaktopslysning;
+}
+
+.some {
+    grid-area: some;
+}
+
+
+
+
 
 /*KONTAKTSIDEN STARTER HER...........*/
 
@@ -177,6 +212,8 @@ h1 {
     font-size: 0.9em;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
 }
 
 .billedekontakt {
@@ -208,4 +245,350 @@ h1 {
 
 #findos {
     grid-area: find;
+}
+
+
+/*OM OS STARTER HER......................*/
+#splash_omos {
+    background-image: url(img/omos_placeholder.png);
+    height: 65vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#om h1 {
+    color: #011EE2;
+    font-size: 1.34em;
+}
+
+#om .omtekst2 h1 {
+    color: black;
+    padding-bottom: 4vw;
+}
+
+.billedeom2 {
+    height: 85vw;
+    width: 64vw;
+    background-image: url(img/omos_2.png);
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.billedeom3 {
+    margin-top: 9vw;
+    height: 85vw;
+    width: 64vw;
+    background-image: url(img/billedeom3.png);
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 10vw;
+}
+
+.omtekst1 {
+    grid-area: om;
+}
+
+.omtekst2 {
+    grid-area: om2;
+}
+
+
+.border {
+    height: 85vw;
+    width: 64vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3C7AC;
+    position: relative;
+    top: -74vw;
+    left: 10vw;
+    z-index: 1;
+}
+
+.border2 {
+    height: 85vw;
+    width: 64vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3D3D3;
+    position: relative;
+    top: -74vw;
+    z-index: 2;
+}
+
+.borderbillede2 {
+    margin-top: 20vw;
+    height: 115vw;
+    grid-area: billede2;
+}
+
+.borderbillede {
+    margin-top: 12vw;
+    height: 110vw;
+    grid-area: billede1;
+}
+
+/*MEDIAQUERIES..............*/
+
+@media only screen and (min-width:600px) {
+    #splash_kontakt {
+        height: 50vw;
+    }
+
+    #findos h1 {
+        padding-bottom: 2vw;
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (min-width:500px) {
+
+    .billedeom3 {
+        background-size: 80%;
+    }
+
+    .billedeom2 {
+        background-size: 80%;
+    }
+
+    .border {
+        height: 60vw;
+        width: 50vw
+    }
+
+    .border2 {
+        height: 60vw;
+        width: 50vw
+    }
+
+    .borderbillede {
+        height: 85vw;
+    }
+
+
+    .borderbillede2 {
+        height: 85vw;
+    }
+}
+
+
+@media only screen and (min-width:751px) {
+
+    nav {
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        color: white;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.38);
+    }
+
+    footer {
+        padding: 35px 105px;
+    }
+
+    #splash_kontakt {
+        height: 30vw;
+    }
+
+    #kontakt {
+
+        margin: 35px;
+    }
+
+    .omtekst1 {
+        width: 40vw;
+    }
+
+    .omtekst2 {
+        width: 40vw;
+    }
+
+
+    #om {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-areas: "billede1 om"
+            "om2 billede2";
+    }
+
+
+    .billedeom2 {
+        background-size: 40%;
+        height: 50vw;
+        margin: 0;
+    }
+
+    .billedeom3 {
+        background-size: 40%;
+        height: 50vw;
+        margin: 0;
+        left: 0;
+    }
+
+    .border {
+        height: 28vw;
+        width: 25vw;
+        top: -41vw;
+        left: 5vw;
+    }
+
+    .borderbillede,
+    .borderbillede2 {
+        height: 50vw;
+        margin: 0;
+        padding: 0;
+        widows: 10vw;
+    }
+
+    .border2 {
+        height: 31vw;
+        width: 27vw;
+        top: -42vw;
+        left: 4vw;
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    omtekst1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #splash_omos {
+        height: 30vw;
+    }
+
+    #kontakt {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #kontakt .book_knap {
+        height: 5vw;
+        width: 20vw;
+        font-size: 0.8em;
+        padding-top: 1.6vw;
+
+    }
+
+    #menuknap {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    #kontakt h1 {
+        padding: 0;
+        padding-top: 2.5vw;
+    }
+
+    #kontakt h3 {
+        padding-bottom: 0;
+        padding-top: 3vw;
+    }
+
+    body main #kontakt_billede {
+        padding-top: 3vw;
+    }
+
+    .book_knap {
+        margin-top: 4vw;
+    }
+
+    #kort_billede {
+        margin-top: 8vw;
+        padding-top: 0;
+    }
+
+    .kontakt_tekst {
+        height: 55vw;
+    }
+
+    #kontakt_billede {
+        height: 55vw;
+    }
+
+    #findos {
+        margin: 35px 50px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:970px) {
+    nav {
+        font-size: 0.8em;
+    }
+
+}
+
+/*
+@media only screen and (max-width:750px) {
+
+    .billedekontakt,
+    .borderkontakt {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+
+
+    nav {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    #kontakt {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+*/
+
+@media only screen and (min-width:1195px) {
+    #findos p {
+        padding-right: 15vw;
+    }
+
+    main {
+        margin: 35px 100px;
+    }
+
+    .billedekontakt {
+        height: 35vw;
+        width: 36vw;
+    }
+
+    .borderkontakt {
+        height: 35vw;
+        width: 36vw;
+        top: -30vw;
+        left: 5vw;
+    }
+
+    #kort_billede {
+        margin-top: 0;
+    }
 }
