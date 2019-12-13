@@ -186,6 +186,10 @@ footer {
 
 }
 
+.footer_indhold {
+    margin: 35px 55px;
+}
+
 
 /*STYLING AF FORSIDE...............*/
 #splash {
@@ -220,6 +224,20 @@ footer {
 .kontakt_tekst {
     padding-right: 5vw;
 }
+
+/*Scroll*/
+#container_kontakt {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+
 
 #splash_kontakt {
     background-image: url(img/kontakt_placeholderm.jpg);
@@ -295,6 +313,7 @@ footer {
 
 #kort {
     grid-area: kort;
+    padding-top: 2vw;
 }
 
 .borderkontakt {
@@ -311,6 +330,8 @@ footer {
 
 #findos {
     grid-area: find;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
 
 
@@ -412,6 +433,28 @@ footer {
     justify-content: flex-end;
 }
 
+#book_beskrivelse h1 {
+    padding-bottom: 2vw;
+}
+
+.kontakt_knap {
+    height: 7vw;
+    width: 30vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    margin-top: 5vw;
+    font-size: 0.9em;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+}
+
 /*MEDIAQUERIES..............*/
 
 @media only screen and (min-width:600px) {
@@ -511,11 +554,6 @@ footer {
 
     #splash_book {
         height: 30vw;
-    }
-
-    #kontakt {
-
-        margin: 35px;
     }
 
 
@@ -638,11 +676,6 @@ footer {
     #kontakt_billede {
         height: 55vw;
     }
-
-    #findos {
-        margin: 35px 50px;
-    }
-
 }
 
 
@@ -692,7 +725,7 @@ footer {
     }
 
     .footer_indhold {
-        margin: 35px 150px;
+        margin: 35px 100px;
     }
 
     .billedekontakt {
