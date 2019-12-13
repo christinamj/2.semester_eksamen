@@ -139,7 +139,40 @@ nav p {
 #menuknapluk {
     font-size: 3em;
     color: white;
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    padding-left: 8vw
 }
+
+#burger {
+    height: 200vw;
+    background-color: #D3C7AC;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    list-style: none;
+    padding-top: 11vw
+}
+
+#burger a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: gopher, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+#burger li {
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    padding-left: 7vw;
+}
+
 
 
 /*STYLING AF FOOTER..........*/
@@ -148,9 +181,8 @@ footer {
     background-color: #8B8A88;
     margin-top: 5vw;
     font-size: 0.8em;
-    padding-left: 15vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 
 }
 
@@ -465,11 +497,6 @@ footer {
         top: -1vw
     }
 
-
-    footer {
-        padding: 35px 105px;
-    }
-
     #splash_kontakt {
         height: 30vw;
     }
@@ -662,6 +689,10 @@ footer {
 
     main {
         margin: 35px 100px;
+    }
+
+    .footer_indhold {
+        margin: 35px 150px;
     }
 
     .billedekontakt {
