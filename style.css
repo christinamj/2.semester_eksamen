@@ -49,7 +49,7 @@ h1 {
     font-size: 1.5em;
 }
 
-
+/*Styling af menu..................*/
 #menuknap {
     font-size: 2.4em;
     margin: 0px 15px;
@@ -72,7 +72,7 @@ header nav a:visited {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 13vw;
+    padding-left: 12vw;
     height: 5vw;
 }
 
@@ -128,8 +128,21 @@ nav p {
     left: 8vw;
 }
 
+/*STYLING AF BURGER.........*/
+.hidden {
+    transform: scale(0);
+    display: none;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknapluk {
+    font-size: 3em;
+    color: white;
+}
 
 
+/*STYLING AF FOOTER..........*/
 
 footer {
     background-color: #8B8A88;
@@ -141,21 +154,30 @@ footer {
 
 }
 
-.abningstider {
-    grid-area: abningstider;
+
+/*STYLING AF FORSIDE...............*/
+#splash {
+    background-image: url(img/forside_placeholder.png);
+    height: 66vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
 }
 
-.kontaktopslysning {
-    grid-area: kontaktopslysning;
+/*STYLING AF GALLERI................*/
+#splash2 {
+    background-image: url(img/galleri_placeholder.png);
+    height: 66vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
 }
-
-.some {
-    grid-area: some;
-}
-
-
-
-
 
 /*KONTAKTSIDEN STARTER HER...........*/
 
@@ -347,10 +369,34 @@ footer {
     grid-area: billede1;
 }
 
+/*STYLING AF BOOK................*/
+#splash_book {
+    background-image: url(img/omos_placeholder.png);
+    height: 65vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /*MEDIAQUERIES..............*/
 
 @media only screen and (min-width:600px) {
     #splash_kontakt {
+        height: 50vw;
+    }
+
+
+    #splash {
+        height: 50vw;
+    }
+
+    #splash2 {
+        height: 50vw;
+    }
+
+    #splash_book {
         height: 50vw;
     }
 
@@ -414,12 +460,29 @@ footer {
         position: fixed;
     }
 
+    .hjalmar {
+        position: relative;
+        top: -1vw
+    }
+
 
     footer {
         padding: 35px 105px;
     }
 
     #splash_kontakt {
+        height: 30vw;
+    }
+
+    #splash {
+        height: 30vw;
+    }
+
+    #splash2 {
+        height: 30vw;
+    }
+
+    #splash_book {
         height: 30vw;
     }
 
@@ -471,7 +534,11 @@ footer {
         height: 50vw;
         margin: 0;
         padding: 0;
-        widows: 10vw;
+        width: 10vw;
+    }
+
+    borderbillede {
+        width: 10vw;
     }
 
     .border2 {
