@@ -15,7 +15,10 @@ html {
 }
 
 main {
-    margin: 35px 55px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 header nav a:link {
@@ -34,10 +37,13 @@ nav a:visited {
     color: white;
 }
 
+
+
 p {
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight: 100;
+    font-size: 0.8em;
 }
 
 
@@ -45,8 +51,12 @@ h1 {
     font-family: gopher, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 1.2rem;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding-bottom: 4vw;
+}
+
+h3 {
+    font-size: 0.8em;
 }
 
 /*Styling af menu..................*/
@@ -183,11 +193,12 @@ footer {
     font-size: 0.8em;
     padding-top: 2vw;
     padding-bottom: 2vw;
+    height: 60vw;
 
 }
 
 .footer_indhold {
-    margin: 35px 55px;
+    margin: 15px 55px;
 }
 
 
@@ -221,19 +232,76 @@ footer {
     display: none;
 }
 
-.kontakt_tekst {
-    padding-right: 5vw;
+#kort {
+    width: 20vw;
 }
+
+
+#kort {
+    width: 50px;
+    height: 50px;
+}
+
+p {
+
+    word-break: break-all;
+
+}
+
+.omtekst1 p {
+    width: 40px;
+    word-break: break-all;
+}
+
+.find_tekst {
+    padding-top: 5vw;
+}
+
+#kort {
+    padding-left: 28vw;
+}
+
+.pil {
+    font-size: 2em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: 78vw;
+}
+
+.pil2 {
+    font-size: 2em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: -12vw;
+}
+
+
+.omtekst1 .pil2 {}
 
 /*Scroll*/
 #container_kontakt {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    height: 90vw;
+
+}
+
+main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+main {
     display: flex;
     flex-direction: row;
-
-
 }
 
 
@@ -241,7 +309,7 @@ footer {
 
 #splash_kontakt {
     background-image: url(img/kontakt_placeholderm.jpg);
-    height: 66vw;
+    height: 65vw;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -253,16 +321,14 @@ footer {
 #kort_billede {
     background-image: url(img/Rectangle%20206.png);
     height: 30vw;
-    width: 100vw;
+    width: 50vw;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 10vw;
 }
 
 #kontakt h1 {
     color: #011EE2;
-    padding-bottom: 5vw;
-    font-size: 1.5em;
+
 }
 
 #findos h1 {
@@ -274,7 +340,6 @@ footer {
     font-family: gopher, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 1rem;
     padding-top: 5vw;
 }
 
@@ -300,20 +365,18 @@ footer {
     z-index: 2;
 }
 
+#kontakt_billede {
+    height: 10vw;
+}
+
 .billedekontakt {
-    height: 49vw;
+    height: 39vw;
     width: 36vw;
     background-image: url(img/billedeom3.png);
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 12vw;
-}
-
-
-#kort {
-    grid-area: kort;
-    padding-top: 2vw;
 }
 
 .borderkontakt {
@@ -336,9 +399,27 @@ footer {
 
 
 /*OM OS STARTER HER......................*/
+
+#om {
+    display: flex;
+    flex-direction: row;
+    height: 90vw;
+}
+
+.omtekst1 {
+    padding-top: 10vw;
+    margin-right: 40vw;
+}
+
+
+
+.omtekst1 .book_knap {
+    margin-top: 0;
+}
+
 #splash_omos {
     background-image: url(img/omos_placeholder.png);
-    height: 65vw;
+    height: 45vw;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -357,8 +438,8 @@ footer {
 }
 
 .billedeom2 {
-    height: 85vw;
-    width: 64vw;
+    height: 70vw;
+    width: 60vw;
     background-image: url(img/omos_2.png);
     position: relative;
     z-index: 2;
@@ -367,15 +448,13 @@ footer {
 }
 
 .billedeom3 {
-    margin-top: 9vw;
-    height: 85vw;
-    width: 64vw;
+    height: 70vw;
+    width: 60vw;
     background-image: url(img/billedeom3.png);
     position: relative;
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
-    left: 10vw;
 }
 
 .omtekst1 {
@@ -383,43 +462,46 @@ footer {
 }
 
 .omtekst2 {
-    grid-area: om2;
+    margin-right: 40;
+    padding-top: 10vw;
 }
 
 
 .border {
-    height: 85vw;
-    width: 64vw;
+    height: 70vw;
+    width: 60vw;
     border-style: solid;
     border-width: 4px;
     border-color: #D3C7AC;
     position: relative;
-    top: -74vw;
+    top: -60vw;
     left: 10vw;
     z-index: 1;
+
 }
 
 .border2 {
-    height: 85vw;
-    width: 64vw;
+    height: 70vw;
+    width: 60vw;
     border-style: solid;
     border-width: 4px;
     border-color: #D3D3D3;
     position: relative;
-    top: -74vw;
+    top: -60vw;
+    left: -7vw;
     z-index: 2;
 }
 
 .borderbillede2 {
-    margin-top: 20vw;
     height: 115vw;
     grid-area: billede2;
+    margin-left: 40vw;
+    margin-right: 6vw;
 }
 
 .borderbillede {
-    margin-top: 12vw;
     height: 110vw;
-    grid-area: billede1;
+    margin-right: 40vw;
 }
 
 /*STYLING AF BOOK................*/
@@ -541,19 +623,19 @@ footer {
     }
 
     #splash_kontakt {
-        height: 30vw;
+        height: 20vw;
     }
 
     #splash {
-        height: 30vw;
+        height: 20vw;
     }
 
     #splash2 {
-        height: 30vw;
+        height: 20vw;
     }
 
     #splash_book {
-        height: 30vw;
+        height: 20vw;
     }
 
 
@@ -563,6 +645,7 @@ footer {
 
     .omtekst2 {
         width: 40vw;
+        margin-right: 40vw;
     }
 
 
@@ -664,10 +747,6 @@ footer {
         margin-top: 4vw;
     }
 
-    #kort_billede {
-        margin-top: 8vw;
-        padding-top: 0;
-    }
 
     .kontakt_tekst {
         height: 55vw;
