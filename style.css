@@ -15,10 +15,7 @@ html {
 }
 
 main {
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 5% 10%;
 }
 
 header nav a:link {
@@ -37,13 +34,10 @@ nav a:visited {
     color: white;
 }
 
-
-
 p {
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 0.8em;
 }
 
 
@@ -51,12 +45,8 @@ h1 {
     font-family: gopher, sans-serif;
     font-style: normal;
     font-weight: 100;
-    font-size: 1.2em;
-    padding-bottom: 4vw;
-}
-
-h3 {
-    font-size: 0.8em;
+    font-size: 1.2rem;
+    font-size: 1.5em;
 }
 
 /*Styling af menu..................*/
@@ -83,7 +73,7 @@ header nav a:visited {
     flex-direction: row;
     justify-content: center;
     padding-left: 12vw;
-    height: 5vw;
+    height: 3vw;
 }
 
 nav {
@@ -193,12 +183,11 @@ footer {
     font-size: 0.8em;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    height: 60vw;
 
 }
 
 .footer_indhold {
-    margin: 15px 55px;
+    margin: 0% 10%;
 }
 
 
@@ -232,84 +221,13 @@ footer {
     display: none;
 }
 
-#kort {
-    width: 20vw;
+.kontakt_tekst {
+    padding-right: 5vw;
 }
-
-
-#kort {
-    width: 50px;
-    height: 50px;
-}
-
-p {
-
-    word-break: break-all;
-
-}
-
-.omtekst1 p {
-    width: 40px;
-    word-break: break-all;
-}
-
-.find_tekst {
-    padding-top: 5vw;
-}
-
-#kort {
-    padding-left: 28vw;
-}
-
-.pil {
-    font-size: 2em;
-    padding-top: 35vw;
-    padding-left: 15vw;
-    padding-top: 0;
-    position: fixed;
-    top: 88vw;
-    left: 78vw;
-}
-
-.pil2 {
-    font-size: 2em;
-    padding-top: 35vw;
-    padding-left: 15vw;
-    padding-top: 0;
-    position: fixed;
-    top: 88vw;
-    left: -12vw;
-}
-
-
-.omtekst1 .pil2 {}
-
-/*Scroll*/
-#container_kontakt {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height: 90vw;
-
-}
-
-main {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-main {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
 
 #splash_kontakt {
     background-image: url(img/kontakt_placeholderm.jpg);
-    height: 65vw;
+    height: 66vw;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,14 +239,16 @@ main {
 #kort_billede {
     background-image: url(img/Rectangle%20206.png);
     height: 30vw;
-    width: 50vw;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 10vw;
 }
 
 #kontakt h1 {
     color: #011EE2;
-
+    padding-bottom: 5vw;
+    font-size: 1.5em;
 }
 
 #findos h1 {
@@ -340,6 +260,7 @@ main {
     font-family: gopher, sans-serif;
     font-style: normal;
     font-weight: 100;
+    font-size: 1rem;
     padding-top: 5vw;
 }
 
@@ -363,10 +284,7 @@ main {
     cursor: pointer;
     text-decoration: none;
     z-index: 2;
-}
-
-#kontakt_billede {
-    height: 10vw;
+    color: black;
 }
 
 .billedekontakt {
@@ -377,49 +295,38 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 12vw;
+    margin-top: 8vw;
+}
+
+#kontakt_billede {
+    margin-top: 6vw;
+}
+
+#kort {
+    grid-area: kort;
 }
 
 .borderkontakt {
-    height: 42vw;
+    height: 40vw;
     width: 36vw;
     border-style: solid;
     border-width: 4px;
     border-color: #D3C7AC;
     position: relative;
     z-index: auto;
-    top: -38vw;
+    top: -35vw;
     left: 5vw;
 }
 
 #findos {
     grid-area: find;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
 }
 
 
 /*OM OS STARTER HER......................*/
-
-#om {
-    display: flex;
-    flex-direction: row;
-    height: 90vw;
-}
-
-.omtekst1 {
-    padding-top: 10vw;
-    margin-right: 40vw;
-}
-
-
-
-.omtekst1 .book_knap {
-    margin-top: 0;
-}
-
 #splash_omos {
     background-image: url(img/omos_placeholder.png);
-    height: 45vw;
+    height: 40vw;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -429,17 +336,16 @@ main {
 
 #om h1 {
     color: #011EE2;
-    font-size: 1.34em;
+    margin-bottom: 2vw;
 }
 
 #om .omtekst2 h1 {
     color: black;
-    padding-bottom: 4vw;
 }
 
 .billedeom2 {
-    height: 70vw;
-    width: 60vw;
+    height: 45vw;
+    width: 40vw;
     background-image: url(img/omos_2.png);
     position: relative;
     z-index: 2;
@@ -448,13 +354,15 @@ main {
 }
 
 .billedeom3 {
-    height: 70vw;
-    width: 60vw;
+    margin-top: 9vw;
+    height: 65vw;
+    width: 50vw;
     background-image: url(img/billedeom3.png);
     position: relative;
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
+    left: 10vw;
 }
 
 .omtekst1 {
@@ -462,52 +370,52 @@ main {
 }
 
 .omtekst2 {
-    margin-right: 40;
-    padding-top: 10vw;
+    grid-area: om2;
+    padding-bottom: 15vw;
 }
 
 
 .border {
-    height: 70vw;
-    width: 60vw;
+    height: 43vw;
+    width: 35vw;
     border-style: solid;
     border-width: 4px;
     border-color: #D3C7AC;
     position: relative;
-    top: -60vw;
+    top: -38vw;
     left: 10vw;
     z-index: 1;
-
 }
 
 .border2 {
-    height: 70vw;
-    width: 60vw;
+    height: 65vw;
+    width: 50vw;
     border-style: solid;
     border-width: 4px;
     border-color: #D3D3D3;
     position: relative;
-    top: -60vw;
-    left: -7vw;
+    top: -61vw;
     z-index: 2;
 }
 
 .borderbillede2 {
-    height: 115vw;
+    margin-top: 20vw;
+    height: 85vw;
     grid-area: billede2;
-    margin-left: 40vw;
-    margin-right: 6vw;
+    padding-left: 7vw;
 }
 
 .borderbillede {
-    height: 110vw;
-    margin-right: 40vw;
+    margin-top: 12vw;
+    height: 65vw;
+    grid-area: billede1;
+    padding-left: 15vw
 }
 
 /*STYLING AF BOOK................*/
 #splash_book {
     background-image: url(img/omos_placeholder.png);
-    height: 65vw;
+    height: 45vw;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,27 +423,110 @@ main {
     justify-content: flex-end;
 }
 
-#book_beskrivelse h1 {
-    padding-bottom: 2vw;
-}
-
 .kontakt_knap {
-    height: 7vw;
-    width: 30vw;
+    height: 10vw;
+    width: 32vw;
     background-color: #F5F4EC;
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight: 350;
     display: flex;
     justify-content: center;
-    padding-top: 2vw;
+    padding-top: 2.5vw;
     margin-top: 5vw;
     font-size: 0.9em;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     text-decoration: none;
     z-index: 2;
+    color: black;
 }
+
+.booktekst {
+    margin-bottom: 10vw;
+    margin-top: 10vw
+}
+
+.book_billedecon {
+    height: 90vw
+}
+
+.booktekst h1 {
+    margin-bottom: 2vw
+}
+
+.billede_book {
+    height: 69vw;
+    width: 78vw;
+    background-image: url(img/billedeom3.png);
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 12vw;
+    margin-top: 15vw;
+}
+
+.border_book {
+    height: 70vw;
+    width: 70vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3C7AC;
+    position: relative;
+    z-index: auto;
+    top: -62vw;
+    left: 12vw;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F5F4EC;
+    color: white;
+    width: 70vw;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #d1cfbf;
+}
+
+/* Add a background color and some padding around the form */
+.container_form {
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
 
 /*MEDIAQUERIES..............*/
 
@@ -566,42 +557,35 @@ main {
 
 }
 
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:500px) {}
 
 
-
-    .billedeom3 {
-        background-size: 80%;
-    }
-
-    .billedeom2 {
-        background-size: 80%;
-    }
-
-    .border {
-        height: 60vw;
-        width: 50vw
-    }
-
-    .border2 {
-        height: 60vw;
-        width: 50vw
-    }
-
-    .borderbillede {
-        height: 85vw;
-    }
-
-
-    .borderbillede2 {
-        height: 85vw;
-    }
-}
-
-
-@media only screen and (min-width:751px) {
+@media only screen and (min-width:824px) {
     #kontakt_billede {
         display: block;
+    }
+
+    .kontakt_knap {
+        height: 5vw;
+        width: 16vw;
+        background-color: #F5F4EC;
+        font-family: montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 350;
+        display: flex;
+        justify-content: center;
+        padding-top: 2vw;
+        margin-top: 5vw;
+        font-size: 0.9em;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 2;
+        color: black;
+    }
+
+    #om h1 {
+        font-size: 2em;
     }
 
     nav {
@@ -623,58 +607,60 @@ main {
     }
 
     #splash_kontakt {
-        height: 20vw;
+        height: 30vw;
     }
 
     #splash {
-        height: 20vw;
+        height: 30vw;
     }
 
     #splash2 {
-        height: 20vw;
+        height: 30vw;
     }
 
     #splash_book {
-        height: 20vw;
+        height: 30vw;
     }
+
+    #kontakt {}
 
 
     .omtekst1 {
-        width: 40vw;
+        padding-left: 35px;
+        padding-top: 15px;
     }
 
     .omtekst2 {
         width: 40vw;
-        margin-right: 40vw;
     }
 
 
     #om {
         display: grid;
-        grid-template-columns: 50%;
+        grid-template-columns: auto auto auto auto;
         grid-template-areas: "billede1 om"
             "om2 billede2";
+        grid-row-gap: 100px;
     }
 
 
     .billedeom2 {
-        background-size: 40%;
+        background-size: 65%;
         height: 50vw;
         margin: 0;
     }
 
     .billedeom3 {
-        background-size: 40%;
-        height: 50vw;
-        margin: 0;
-        left: 0;
+        height: 30vw;
+        width: 30vw;
+        margin-top: 0;
     }
 
     .border {
-        height: 28vw;
-        width: 25vw;
-        top: -41vw;
-        left: 5vw;
+        height: 30vw;
+        width: 28vw;
+        top: -44vw;
+        left: 4vw;
     }
 
     .borderbillede,
@@ -685,15 +671,19 @@ main {
         width: 10vw;
     }
 
-    borderbillede {
-        width: 10vw;
+    .borderbillede {
+        padding-top: 2vw
+    }
+
+    .borderbillede2 {
+        padding-left: 35px;
     }
 
     .border2 {
-        height: 31vw;
+        height: 29vw;
         width: 27vw;
-        top: -42vw;
-        left: 4vw;
+        top: -26vw;
+        left: 7vw;
         margin: 0;
         padding: 0;
         margin-left: 0;
@@ -711,7 +701,6 @@ main {
 
     #kontakt {
         flex-direction: row-reverse;
-        justify-content: space-between;
     }
 
     #kontakt .book_knap {
@@ -739,24 +728,77 @@ main {
         padding-top: 3vw;
     }
 
-    body main #kontakt_billede {
-        padding-top: 3vw;
-    }
-
     .book_knap {
         margin-top: 4vw;
     }
 
+    #kort_billede {
+        margin-top: 8vw;
+        padding-top: 0;
+    }
 
     .kontakt_tekst {
-        height: 55vw;
+        height: 45vw;
     }
 
     #kontakt_billede {
-        height: 55vw;
+        height: 45vw;
     }
+
+    .billedekontakt {
+        background-size: 70%;
+        margin-top: 3.5vw;
+    }
+
+    .borderkontakt {
+        height: 31vw;
+        width: 24vw;
+        top: -35vw;
+        left: 5vw;
+    }
+
 }
 
+.billede_book {
+    height: 39vw;
+    width: 48vw;
+    background-image: url(img/billedeom3.png);
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 12vw;
+    margin-top: 15vw;
+}
+
+.border_book {
+    height: 39vw;
+    width: 45vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3C7AC;
+    position: relative;
+    z-index: auto;
+    top: -34vw;
+    left: 10vw;
+}
+
+.book_billedecon {
+    height: 55vw;
+}
+
+input[type=submit] {
+    background-color: #F5F4EC;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+}
 
 
 
@@ -769,7 +811,6 @@ main {
 
 /*
 @media only screen and (max-width:750px) {
-
     .billedekontakt,
     .borderkontakt {
         transform: scale(0);
@@ -777,16 +818,12 @@ main {
         transform: translateX(-100%);
         opacity: 0;
     }
-
-
-
     nav {
         transform: scale(0);
         display: none;
         transform: translateX(-100%);
         opacity: 0;
     }
-
     #kontakt {
         flex-direction: row;
         justify-content: space-between;
@@ -794,32 +831,55 @@ main {
 }
 */
 
-@media only screen and (min-width:1195px) {
+@media only screen and (min-width:1050px) {
     #findos p {
         padding-right: 15vw;
     }
 
-    main {
-        margin: 35px 100px;
+    #kontakt_billede {
+        margin: 0;
     }
 
-    .footer_indhold {
-        margin: 35px 100px;
-    }
+    .billedekontakt {}
 
-    .billedekontakt {
-        height: 35vw;
-        width: 36vw;
+    .kontakt_tekst {
+        margin-right: 5vw;
     }
 
     .borderkontakt {
-        height: 35vw;
-        width: 36vw;
-        top: -30vw;
+        height: 31vw;
+        width: 24vw;
+        top: -35vw;
         left: 5vw;
     }
 
+    #kontakt {
+        margin-bottom: 0;
+    }
+
+
     #kort_billede {
         margin-top: 0;
+        height: 20vw
+    }
+
+    main {
+        margin: 2% 10%;
+    }
+
+    .billedeom2 {
+        height: 30vw;
+        width: 40vw;
+    }
+
+    .border {
+        height: 28vw;
+        width: 25vw;
+        top: -25vw;
+        left: 5vw
+    }
+
+    #om {
+        grid-gap: 10px;
     }
 }
