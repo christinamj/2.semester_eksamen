@@ -8,7 +8,33 @@
     <link rel="stylesheet" href="https://use.typekit.net/yfo8alo.css">
     <link rel="stylesheet" href="https://use.typekit.net/yfo8alo.css">
     <link rel="stylesheet" href="style.css">
-    <style></style>
+    <style>
+        #velkommen {
+            display: flex;
+            Flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #velkommen .pil {
+            font-size: 4em;
+        }
+
+        #praesentation {
+            Display: flex;
+            Flex-wrap: wrap;
+        }
+
+        .praesentation_top {
+            Display: flex;
+            Flex-wrap: wrap;
+
+            Flex-basis: 300px;
+            Flex-grow: 1;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -50,7 +76,20 @@
                 ⌄
             </div>
         </section>
-        <section id="praesentation"></section>
+        <section id="praesentation">
+            <div class="praesentation_top">
+                <div class="img_border">
+                    <div class="img">
+                        <img src="forside_img/Image%203.png" alt="unikke smykker">
+                    </div>
+                    <div class="border"></div>
+                </div>
+                <div class="txt">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </div>
+        </section>
         <section id="inspiration"></section>
         <section id="udvalg"></section>
     </main>
