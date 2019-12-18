@@ -58,6 +58,14 @@ h1 {
     margin-bottom: 4vw;
 }
 
+h3 {
+    font-family: montserrat, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
+}
+
 /*Styling af menu..................*/
 #menuknap {
     font-size: 2.4em;
@@ -83,23 +91,7 @@ header nav a:visited {
     justify-content: center;
     padding-left: 12vw;
     height: 3vw;
-}
-
-nav {
-    display: none;
-    /*
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    color: white;
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.38);
-*/
-    /*    padding: 35px 190px;*/
-
+    grid-area: nav;
 }
 
 nav a {
@@ -120,6 +112,13 @@ nav p {
 
 }
 
+
+
+#menu,
+nav {
+    display: none;
+}
+
 .book_header {
     height: 3.3vw;
     width: 12vw;
@@ -134,7 +133,6 @@ nav p {
     font-size: 0.7em;
     position: relative;
     top: -1.5vw;
-    left: 8vw;
 }
 
 /*STYLING AF BURGER.........*/
@@ -147,7 +145,7 @@ nav p {
 
 #menuknapluk {
     font-size: 3em;
-    color: white;
+    color: black;
     font-family: gopher, sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -156,7 +154,7 @@ nav p {
 
 #burger {
     height: 200vw;
-    background-color: #D3C7AC;
+    background-color: #F5F4EC;
     padding-bottom: 0;
     margin-bottom: 0;
     width: 100vw;
@@ -166,14 +164,15 @@ nav p {
 }
 
 #burger a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.5em;
-    font-family: gopher, sans-serif;
+    font-family: montserrat, sans-serif;
+
+    font-weight: 300;
+
     font-style: normal;
-    font-weight: 100;
     text-align: center;
-    color: white;
 }
 
 #burger li {
@@ -213,16 +212,163 @@ footer {
 }
 
 /*STYLING AF GALLERI................*/
-#splash2 {
-    background-image: url(img/galleri_placeholder.png);
-    height: 66vw;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.galleri_header {
+    color: black;
+    background-color: #F5F4EC;
+    margin: 0;
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: header;
 }
+
+.kategori {
+    padding-top: 4vw;
+    padding-left: 4vw;
+    margin: 0% 10%;
+}
+
+
+
+.galleri_header #menuknap {
+    color: black;
+    margin: 0;
+    margin: 0% 3%;
+    display: block;
+}
+
+/*
+galleri.html {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#galleri_wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+*/
+.pil {
+    font-size: 1.5em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: 78vw;
+}
+
+.pil2 {
+    font-size: 1.5em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: -12vw;
+}
+
+
+
+#galleri_id main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-right: 0;
+}
+
+#galleri_container {
+    height: auto;
+    width: 200vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 100vw;
+    grid-gap: 45px;
+    grid-template-areas:
+        "tekst billeder";
+    padding-top: 15vw;
+}
+
+#billeder {
+    width: 300vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vw 25vw 4vw;
+    grid-gap: 20px;
+    grid-template-areas:
+        "et tre fem seks otte"
+        "et fire fem seks otte"
+        "et fire fem syv otte"
+        "to fire fem syv otte"
+}
+
+#smykketekst {
+    grid-area: tekst;
+    background-color: antiquewhite;
+    width: 20vw;
+}
+
+#smykke_tekst h1 {
+    line-height: 150%;
+    margin-top: 15vw
+}
+
+#smykke_tekst p {
+    line-height: 200%;
+}
+
+#billeder {
+    grid-area: billeder;
+}
+
+.billede1 {
+    grid-area: et;
+    background-color: aquamarine;
+}
+
+.billede2 {
+    grid-area: to;
+    background-color: black;
+}
+
+.billede3 {
+    grid-area: tre;
+    background-color: gray;
+}
+
+.billede4 {
+    grid-area: fire;
+    background-color: #c1a9c6;
+}
+
+.billede5 {
+    grid-area: fem;
+    background-color: #966c7f;
+}
+
+.billede6 {
+    grid-area: seks;
+    background-color: #a3d0d8;
+}
+
+.billede7 {
+    grid-area: syv;
+    background-color: #5e745c;
+}
+
+.billede8 {
+    grid-area: otte;
+    background-color: #f0c6c4;
+}
+
+
+
+
 
 /*KONTAKTSIDEN STARTER HER...........*/
 
@@ -562,14 +708,219 @@ input[type=submit]:hover {
         font-size: 1.5em;
     }
 
+}
 
+@media only screen and (max-width:824px) {
+
+    #kategorier,
+    .sortering_dropdown {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width:435px) {
+    /*
+    #galleri_container {
+        grid-template-rows: 100vw;
+    }
+*/
+
+    .pil {
+        position: relative;
+        top: 40vw;
+        left: 75vw;
+        position: fixed;
+    }
+
+    .pil2 {
+        position: relative;
+        top: 40vw;
+        position: fixed;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    /*
+    #galleri_container {
+        grid-template-rows: 80vw;
+    }
+*/
+
+    #smykke_tekst h1 {
+        margin-top: 9vw;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    #galleri_container {
+        padding-top: 5vw
+    }
+
+    #smykke_tekst h1 {
+        margin-top: 15vw
+    }
+}
+
+@media only screen and (min-width:640px) {
+    #galleri_container {
+        padding-top: 6vw
+    }
+
+    #smykke_tekst h1 {
+        margin-top: 15vw;
+    }
+
+    /*
+    #billeder {
+        grid-template-rows: 20vw 25vw 4vw;
+    }
+
+    #galleri_container {
+        grid-template-rows: 70vw;
+    }
+*/
 
 }
 
-@media only screen and (min-width:500px) {}
+@media only screen and (min-width:702px) {
+    #galleri_container {
+        padding-top: 6vw
+    }
 
+    #smykke_tekst h1 {
+        margin-top: 15vw;
+    }
+
+    /*
+    #billeder {
+        grid-template-rows: 15vw 25vw 4vw;
+    }
+
+    #galleri_container {
+        grid-template-rows: 65vw;
+        width: 200vw;
+    }
+*/
+
+}
+
+
+@media only screen and (min-width:732px) {
+    #galleri_container {
+        padding-top: 3vw
+    }
+
+    #smykke_tekst h1 {
+        margin-top: 13vw;
+    }
+
+    /*
+    #billeder {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30vw 25vw 4vw;
+        grid-gap: 20px;
+        grid-template-areas:
+    }
+
+    #galleri_container {
+        grid-template-rows: 50vw;
+    }
+*/
+
+}
 
 @media only screen and (min-width:824px) {
+
+    #billeder {
+        height: 50vw;
+    }
+
+    #galleri_id main {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+
+    #smykke_tekst {
+        margin-left: 7vw;
+    }
+
+    #menu,
+    nav {
+        display: block;
+    }
+
+    .galleri_header {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+
+
+    #kategorier {
+        display: block;
+    }
+
+
+    .filterknapper {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F4EC;
+        border: none;
+        height: 7vw;
+        width: 12vw;
+    }
+
+    #billeder {
+        max-height: 50vw;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 6vw 6vw 6vw 6vw;
+        grid-gap: 20px;
+    }
+
+    #galleri_id {
+        max-height: 100vw;
+    }
+
+    #kategorier {
+        display: block;
+        background-color: #F5F4EC;
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 7vw;
+        grid-area: kategorier;
+    }
+
+    #galleri_id main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0vw;
+        grid-template-areas:
+            "nav nav nav nav"
+            "indhold indhold indhold"
+    }
+
+    #galleri_container {
+        margin-top: 7.5vw;
+        grid-area: indhold;
+        max-height: 34.5vw;
+    }
+
+    #galleri_id main {}
+
+    #smykke_tekst h1 {
+        margin-top: 0;
+        margin-bottom: 1vw;
+    }
+
+
     #kontakt_billede {
         display: block;
     }
@@ -599,10 +950,9 @@ input[type=submit]:hover {
         font-size: 2em;
     }
 
-    nav {
-        display: block;
-        flex-direction: row-reverse;
-        width: 100vw;
+    #menu {
+        display: flex;
+        justify-content: space-between;
         padding-top: 2vw;
         padding-bottom: 2vw;
         color: white;
@@ -610,6 +960,8 @@ input[type=submit]:hover {
         top: 0;
         background-color: rgba(0, 0, 0, 0.38);
         position: fixed;
+        height: 7vw;
+        width: 100%;
     }
 
     .hjalmar {
@@ -722,13 +1074,6 @@ input[type=submit]:hover {
 
     }
 
-    #menuknap {
-        transform: scale(0);
-        display: none;
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-
     #kontakt h1 {
         padding: 0;
         padding-top: 2.5vw;
@@ -768,49 +1113,47 @@ input[type=submit]:hover {
         left: 5vw;
     }
 
-}
+    .billede_book {
+        height: 39vw;
+        width: 48vw;
+        background-image: url(img/billedeom3.png);
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 12vw;
+        margin-top: 15vw;
+    }
 
-.billede_book {
-    height: 39vw;
-    width: 48vw;
-    background-image: url(img/billedeom3.png);
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 12vw;
-    margin-top: 15vw;
-}
+    .border_book {
+        height: 39vw;
+        width: 45vw;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #D3C7AC;
+        position: relative;
+        z-index: auto;
+        top: -34vw;
+        left: 10vw;
+    }
 
-.border_book {
-    height: 39vw;
-    width: 45vw;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #D3C7AC;
-    position: relative;
-    z-index: auto;
-    top: -34vw;
-    left: 10vw;
-}
+    .book_billedecon {
+        height: 55vw;
+    }
 
-.book_billedecon {
-    height: 55vw;
+    input[type=submit] {
+        background-color: #F5F4EC;
+        color: white;
+        width: 100%;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+        font-family: montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 350;
+    }
 }
-
-input[type=submit] {
-    background-color: #F5F4EC;
-    color: white;
-    width: 100%;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: black;
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 350;
-}
-
 
 
 @media only screen and (max-width:970px) {
