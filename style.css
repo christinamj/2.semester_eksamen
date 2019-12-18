@@ -749,6 +749,10 @@ input[type=submit]:hover {
     }
 */
 
+    #galleri_container {
+        height: 80vh;
+    }
+
     #smykke_tekst h1 {
         margin-top: 9vw;
     }
@@ -896,15 +900,26 @@ input[type=submit]:hover {
         width: 100vw;
         height: 7vw;
         grid-area: kategorier;
+        position: fixed;
     }
 
     #galleri_id main {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0vw;
+        height: 86vh;
         grid-template-areas:
             "nav nav nav nav"
             "indhold indhold indhold"
+    }
+
+    .valgt {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F4EC;
+        border: none;
+        height: 7vw;
+        width: 12vw;
+        text-decoration: underline;
     }
 
     #galleri_container {
