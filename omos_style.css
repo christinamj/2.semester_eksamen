@@ -104,6 +104,7 @@
         .omtekst1 {
             grid-area: om;
             height: 50vh;
+            margin: 0vw 1.7vw;
         }
 
         .omtekst2 {
@@ -139,12 +140,14 @@
         .borderbillede2 {
             grid-area: billede2;
             height: 55vh;
+            width: 100%;
         }
 
         .borderbillede {
             margin-top: 12vw;
             grid-area: billede1;
             height: 50vh;
+            width: 100%;
         }
 
         @media only screen and (min-width:435px) {
@@ -274,26 +277,22 @@
                 }
 
                 .billedeom2 {
+                    height: 30vw;
                     margin: 0;
+                    width: 35vw;
                 }
 
                 .billedeom3 {
                     height: 30vw;
-                    width: 30vw;
-                    margin-top: 0;
-                }
-
-                .billedeom2 {
-                    height: 30vw;
-                    width: 30vw;
+                    width: 35vw;
                     margin-top: 0;
                 }
 
                 .border {
                     height: 30vw;
-                    width: 28vw;
+                    width: 35vw;
                     top: -25vw;
-                    left: 4vw;
+                    left: 3vw;
                 }
 
 
@@ -313,9 +312,9 @@
 
                 .border2 {
                     height: 29vw;
-                    width: 27vw;
+                    width: 35vw;
                     top: -26vw;
-                    left: 7vw;
+                    left: 3vw;
                     margin: 0;
                     padding: 0;
                     margin-left: 0;
@@ -359,14 +358,14 @@
             @media only screen and (min-width:1050px) {
                 .billedeom2 {
                     height: 30vw;
-                    width: 20vw;
+                    width: 35vw;
                 }
 
                 .border {
                     height: 28vw;
-                    width: 20vw;
+                    width: 35vw;
                     top: -25vw;
-                    left: 5vw
+                    left: 3vw
                 }
 
                 #om {
