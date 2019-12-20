@@ -26,7 +26,7 @@ function animation() {
 
     this.querySelector(".border").classList.add("border_animation");
 
-    this.addEventListener("animationend", noAnimation);
+    this.addEventListener("animationEnd", noAnimation);
 }
 
 
@@ -35,6 +35,7 @@ function noAnimation() {
     console.log("noAnimation");
 
     this.querySelector(".img").classList.remove("img_animation");
+
 
 
     this.querySelector(".border").classList.remove("border_animation");
