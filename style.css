@@ -216,7 +216,7 @@ footer h3 {
 }
 
 .some {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 10vw;
     padding-top: 2vh;
@@ -412,6 +412,11 @@ footer h3 {
 
 /*MEDIAQUERIES..............*/
 
+@media only screen and (min-width:750px) {
+    .some {
+        display: flex;
+    }
+}
 
 @media only screen and (min-width:824px) {
 
