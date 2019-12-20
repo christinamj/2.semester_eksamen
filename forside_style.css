@@ -28,6 +28,14 @@
     font-size: 4em;
 }
 
+#velkommen .underskrift {
+    padding-top: 4vh;
+}
+
+#velkommen .underskrift img {
+    width: 17vw;
+}
+
 /* ----- ANIMATION -----*/
 
 .img_animation {
