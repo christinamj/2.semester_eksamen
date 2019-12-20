@@ -5,6 +5,7 @@
     height: 66vw;
     width: 100vw;
     background-size: cover;
+    background-position: 30% 30%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
