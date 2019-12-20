@@ -416,6 +416,10 @@ footer h3 {
         z-index: 3;
     }
 
+    #menu a:hover {
+        color: #D2C7AC;
+    }
+
     .hjalmar {
         position: relative;
         top: -1vw
