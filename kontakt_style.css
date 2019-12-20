@@ -35,7 +35,6 @@
 
 #findos h1 {
     color: #D3C7AC;
-    padding-bottom: 4vw;
 }
 
 #kontakt h3 {
@@ -51,8 +50,9 @@
 }
 
 .find_billede {
-    height: 30vw;
-    width: 30vw;
+    margin-top: 5vw;
+    height: 50vw;
+    width: 80vw;
     background-image: url(img/kontaktto.jpg);
     z-index: 1;
     background-size: cover;
@@ -127,6 +127,16 @@ iframe {
     #findos {
         display: flex;
         justify-content: space-between;
+    }
+
+    .find_billede {
+        margin-top: 0;
+        height: 30vw;
+        width: 30vw;
+        background-image: url(img/kontaktto.jpg);
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #findos p {

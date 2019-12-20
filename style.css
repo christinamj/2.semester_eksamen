@@ -59,6 +59,7 @@ h1 {
     font-style: normal;
     font-size: 1.2rem;
     font-size: 1.5em;
+    margin-bottom: 1.3vw;
 }
 
 h3 {
@@ -271,6 +272,7 @@ footer h3 {
     font-size: 0.7em;
     position: relative;
     top: -1.5vw;
+    transition: .5s;
 }
 
 .book_knap {
@@ -293,8 +295,15 @@ footer h3 {
 }
 
 .book_knap {
-    transition: .5s;
+    transition: 1s;
 
+}
+
+.book_header:hover {
+    background: #011EE2;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .book_knap:hover {
@@ -322,6 +331,13 @@ footer h3 {
     z-index: 2;
     color: black;
     border: none;
+    transition: .5s;
+}
+
+#udvalg button:hover {
+    background: #d3d4d4;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #inspiration button {
@@ -341,6 +357,13 @@ footer h3 {
     z-index: 2;
     color: black;
     border: none;
+    transition: .5s;
+}
+
+#inspiration button:hover {
+    background: #9a9b9b;
+    transform: scale(1.2);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #praesentation button {
