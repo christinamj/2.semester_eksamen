@@ -42,7 +42,7 @@
     font-style: normal;
     font-weight: 100;
     font-size: 1rem;
-    padding-top: 5vw;
+    padding-top: 1vw;
 }
 
 #kontakt {
@@ -60,7 +60,7 @@
 }
 
 .kontakt_knap {
-    height: 10vw;
+    height: 8vh;
     width: 32vw;
     background-color: #F5F4EC;
     font-family: montserrat, sans-serif;
@@ -151,9 +151,11 @@ iframe {
         height: 30vw;
     }
 
+    /*
     .find_billede {
         height: 37vw;
     }
+*/
 
     #kontakt {
         flex-direction: row-reverse;
@@ -163,12 +165,12 @@ iframe {
 
     #kontakt h1 {
         padding: 0;
-        padding-top: 2.5vw;
+        padding-top: 6vh;
     }
 
     #kontakt h3 {
         padding-bottom: 0;
-        padding-top: 3vw;
+        padding-top: 3vh;
     }
 
 
@@ -198,10 +200,10 @@ iframe {
     }
 
     .book_knap {
-        margin-top: 4vw;
-        height: 5vw;
-        width: 15vw;
-        padding-top: 2vw;
+        margin-top: 6vh;
+        height: 6vh;
+        width: 12vw;
+        padding-top: 1.5vh;
     }
 
 }
