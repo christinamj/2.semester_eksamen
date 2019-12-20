@@ -4,15 +4,11 @@ document.addEventListener("DOMContentLoaded", sidenVises);
 function sidenVises() {
     console.log("sidenVises");
 
-    //Mouseover dadaisme
+    //forside
     document.querySelectorAll(".img_border").forEach(ib => {
         ib.addEventListener("mouseover", animation);
 
     });
-
-
-
-
 }
 
 
@@ -27,6 +23,7 @@ function animation() {
     this.querySelector(".border").classList.add("border_animation");
 
     this.addEventListener("animationEnd", noAnimation);
+
 }
 
 
@@ -39,5 +36,6 @@ function noAnimation() {
 
 
     this.querySelector(".border").classList.remove("border_animation");
+
 
 }
