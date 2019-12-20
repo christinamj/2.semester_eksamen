@@ -347,13 +347,7 @@ galleri.html {
         display: block;
     }
 
-    .filterknapper {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #F5F4EC;
-        border: none;
-        height: 7vw;
-        width: 12vw;
-    }
+    .filterknapper {}
 
     #galleri_id {
         max-height: 100vw;
@@ -379,6 +373,14 @@ galleri.html {
         grid-template-areas:
             "nav nav nav nav"
             "indhold indhold indhold"
+    }
+
+    .filterknapper {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F4EC;
+        border: none;
+        height: 7vw;
+        width: 12vw;
     }
 
     #billeder img {
@@ -413,7 +415,6 @@ galleri.html {
         border: none;
         height: 7vw;
         width: 12vw;
-        text-decoration: underline;
     }
 
 }
