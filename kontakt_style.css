@@ -1,54 +1,3 @@
-/* ----- ANIMATION -----*/
-
-.img_animation {
-    animation-name: img_ani;
-    animation-duration: 6s;
-    animation-duration: 1;
-    animation-fill-mode: forwards;
-    transition-timing-function: linear;
-}
-
-
-
-@keyframes img_ani {
-
-    0% {
-        transform: rotate(0deg) translate(-15px) rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(360deg) translate(-15px) rotate(-360deg);
-    }
-
-}
-
-
-
-.border_animation {
-
-    animation-name: border_ani;
-    animation-duration: 6s;
-    animation-duration: 1;
-    animation-fill-mode: forwards;
-    transition-timing-function: linear;
-}
-
-@keyframes border_ani {
-
-    0% {
-        transform: rotate(0deg) translate(15px) rotate(0deg);
-
-    }
-
-    100% {
-        transform: rotate(360deg) translate(-15px) rotate(-360deg);
-    }
-
-}
-
-/* ----- ANIMATION SLUT -----*/
-
 #kontakt_billede {
     display: none;
 }
@@ -145,6 +94,11 @@
 
 #kort {
     grid-area: kort;
+}
+
+iframe {
+    width: 100%;
+    height: 40vh;
 }
 
 .borderkontakt {
