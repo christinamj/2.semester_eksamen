@@ -270,11 +270,11 @@
 
 
 .udvalg_left .img {
-    background-image: url(forside_img/Rectangle%20127.png);
+    background-image: url(img/forsidefire.png);
     width: 95%;
     height: 60vh;
     background-size: cover;
-
+    background-position: 50%;
     Flex-basis: 300px;
     Flex-grow: 1;
 }
@@ -320,7 +320,7 @@
 
 
 .udvalg_right .img {
-    background-image: url(forside_img/Image%204.png);
+    background-image: url(img/forsidefem.jpg);
     width: 100%;
     height: 45vh;
     background-size: cover;

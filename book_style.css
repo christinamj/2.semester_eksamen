@@ -158,7 +158,7 @@ input[type=submit]:hover {
     .billede_book {
         height: 30vw;
         width: 35vw;
-        background-image: url(img/billedeom3.png);
+        background-image: url(img/book_billede.png);
         z-index: 1;
         background-size: cover;
         background-repeat: no-repeat;
