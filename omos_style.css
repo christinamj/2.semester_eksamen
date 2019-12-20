@@ -255,11 +255,12 @@ iframe {
     @media only screen and (min-width:824px) {
 
         #om h1 {
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         .omtekst1 {
-            padding-top: 15px;
+            padding-top: 4vh;
+            ;
         }
 
         .omtekst2 {
@@ -332,10 +333,10 @@ iframe {
         }
 
         .book_knap {
-            margin-top: 4vw;
-            height: 4vw;
-            width: 15vw;
-            padding-top: 1.3vw;
+            margin-top: 6vh;
+            height: 6vh;
+            width: 12vw;
+            padding-top: 1.5vh;
         }
     }
 
