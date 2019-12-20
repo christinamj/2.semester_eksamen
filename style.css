@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
 img {
     width: 100%;
 }
@@ -55,7 +59,6 @@ h1 {
     font-style: normal;
     font-size: 1.2rem;
     font-size: 1.5em;
-    margin-bottom: 4vw;
 }
 
 h3 {
@@ -119,21 +122,7 @@ nav {
     display: none;
 }
 
-.book_header {
-    height: 3.3vw;
-    width: 12vw;
-    background-color: #F5F4EC;
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 350;
-    display: flex;
-    justify-content: center;
-    padding-top: 1vw;
-    color: black;
-    font-size: 0.7em;
-    position: relative;
-    top: -1.5vw;
-}
+
 
 /*STYLING AF BURGER.........*/
 .hidden {
@@ -153,7 +142,7 @@ nav {
 }
 
 #burger {
-    height: 200vw;
+    height: 100vw;
     background-color: #F5F4EC;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -196,243 +185,97 @@ footer {
 
 .footer_indhold {
     margin: 0% 10%;
-}
-
-
-/*STYLING AF FORSIDE...............*/
-#splash {
-    background-image: url(img/forside_placeholder.png);
-    height: 66vw;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
-    justify-content: flex-end;
-    z-index: 1;
-}
-
-/*STYLING AF GALLERI................*/
-
-.galleri_header {
-    color: black;
-    background-color: #F5F4EC;
-    margin: 0;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    grid-area: header;
 }
 
-.kategori {
-    padding-top: 4vw;
-    padding-left: 4vw;
-    margin: 0% 10%;
+.insta {
+    height: 4vw;
+    width: 4vw;
+    background-image: url(img/insta.svg);
 }
 
-
-
-.galleri_header #menuknap {
-    color: black;
-    margin: 0;
-    margin: 0% 3%;
-    display: block;
-}
-
-/*
-galleri.html {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-#galleri_wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-*/
-.pil {
-    font-size: 1.5em;
-    padding-top: 35vw;
-    padding-left: 15vw;
-    padding-top: 0;
-    position: fixed;
-    top: 88vw;
-    left: 78vw;
-}
-
-.pil2 {
-    font-size: 1.5em;
-    padding-top: 35vw;
-    padding-left: 15vw;
-    padding-top: 0;
-    position: fixed;
-    top: 88vw;
-    left: -12vw;
-}
-
-
-
-#galleri_id main {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin-right: 0;
-}
-
-#galleri_container {
-    height: auto;
-    width: 200vw;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 100vw;
-    grid-gap: 45px;
-    grid-template-areas:
-        "tekst billeder";
-    padding-top: 15vw;
-}
-
-#billeder {
-    width: 300vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 30vw 25vw 4vw;
-    grid-gap: 20px;
-    grid-template-areas:
-        "et tre fem seks otte"
-        "et fire fem seks otte"
-        "et fire fem syv otte"
-        "to fire fem syv otte"
-}
-
-#smykketekst {
-    grid-area: tekst;
-    background-color: antiquewhite;
-    width: 20vw;
-}
-
-#smykke_tekst h1 {
-    line-height: 150%;
-    margin-top: 15vw
-}
-
-#smykke_tekst p {
-    line-height: 200%;
-}
-
-#billeder {
-    grid-area: billeder;
-}
-
-.billede1 {
-    grid-area: et;
-    background-color: aquamarine;
-}
-
-.billede2 {
-    grid-area: to;
-    background-color: black;
-}
-
-.billede3 {
-    grid-area: tre;
-    background-color: gray;
-}
-
-.billede4 {
-    grid-area: fire;
-    background-color: #c1a9c6;
-}
-
-.billede5 {
-    grid-area: fem;
-    background-color: #966c7f;
-}
-
-.billede6 {
-    grid-area: seks;
-    background-color: #a3d0d8;
-}
-
-.billede7 {
-    grid-area: syv;
-    background-color: #5e745c;
-}
-
-.billede8 {
-    grid-area: otte;
-    background-color: #f0c6c4;
-}
-
-
-
-
-
-/*KONTAKTSIDEN STARTER HER...........*/
-
-#kontakt_billede {
-    display: none;
-}
-
-.kontakt_tekst {
-    padding-right: 5vw;
-}
-
-#splash_kontakt {
-    background-image: url(img/kontakt_placeholderm.jpg);
-    height: 66vw;
-    width: 100vw;
-    background-size: cover;
+.mail {
+    height: 5vw;
+    width: 5vw;
     background-repeat: no-repeat;
+    background-image: url(img/Tegnebr%C3%A6t%202.svg);
+    color: white;
+}
+
+.some {
     display: flex;
-    justify-content: flex-end;
-    z-index: 1;
+    justify-content: space-between;
+    width: 10vw;
 }
 
-#kort_billede {
-    background-image: url(img/Rectangle%20206.png);
-    height: 30vw;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 10vw;
+/*STYLING AF DROPDOWN.........*/
+
+#dropdown_wrap {
+    background-color: #F5F4EC;
+    margin: 0px;
+    z-index: 500;
+    width: 100%;
+    position: fixed;
+    height: 48vw;
+    top: 10vw;
 }
 
-#kontakt h1 {
-    color: #011EE2;
-    padding-bottom: 5vw;
-    font-size: 1.5em;
-}
-
-#findos h1 {
-    color: #D3C7AC;
-    padding-bottom: 4vw;
-}
-
-#kontakt h3 {
-    font-family: gopher, sans-serif;
+.kat .filterknapper {
+    border: none;
+    background-color: #F5F4EC;
+    font-size: 1em;
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
     font-style: normal;
-    font-weight: 100;
-    font-size: 1rem;
-    padding-top: 5vw;
-}
-
-#kontakt {
+    padding-top: 2vw;
+    padding-bottom: 4vw;
     display: flex;
+    padding-left: 8vw;
 }
 
-.book_knap {
-    height: 7vw;
-    width: 30vw;
+.kat {
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.filt_knap {
+    padding-top: 0.3vw;
+}
+
+
+
+
+/*KNAPPER...........*/
+
+.book_header {
+    height: 3.3vw;
+    width: 12vw;
     background-color: #F5F4EC;
     font-family: montserrat, sans-serif;
     font-style: normal;
     font-weight: 350;
     display: flex;
     justify-content: center;
-    padding-top: 2vw;
+    padding-top: 1vw;
+    color: black;
+    font-size: 0.7em;
+    position: relative;
+    top: -1.5vw;
+}
+
+.book_knap {
+    height: 11vw;
+    width: 32vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vw;
     margin-top: 10vw;
     font-size: 0.9em;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
@@ -442,144 +285,21 @@ galleri.html {
     color: black;
 }
 
-.billedekontakt {
-    height: 39vw;
-    width: 36vw;
-    background-image: url(img/billedeom3.png);
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 12vw;
-    margin-top: 8vw;
+.book_knap {
+    transition: .5s;
+
 }
 
-#kontakt_billede {
-    margin-top: 6vw;
-}
-
-#kort {
-    grid-area: kort;
-}
-
-.borderkontakt {
-    height: 40vw;
-    width: 36vw;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #D3C7AC;
-    position: relative;
-    z-index: auto;
-    top: -35vw;
-    left: 5vw;
-}
-
-#findos {
-    grid-area: find;
+.book_knap:hover {
+    background: #d3d4d4;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 
-/*OM OS STARTER HER......................*/
-#splash_omos {
-    background-image: url(img/omos_placeholder.png);
-    height: 40vw;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
-}
 
-#om h1 {
-    color: #011EE2;
-    margin-bottom: 2vw;
-}
-
-#om .omtekst2 h1 {
-    color: black;
-}
-
-.billedeom2 {
-    height: 45vw;
-    width: 40vw;
-    background-image: url(img/omos_2.png);
-    position: relative;
-    z-index: 2;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.billedeom3 {
-    margin-top: 9vw;
-    height: 65vw;
-    width: 50vw;
-    background-image: url(img/billedeom3.png);
-    position: relative;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    left: 10vw;
-}
-
-.omtekst1 {
-    grid-area: om;
-}
-
-.omtekst2 {
-    grid-area: om2;
-    padding-bottom: 15vw;
-}
-
-
-.border {
-    height: 43vw;
-    width: 35vw;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #D3C7AC;
-    position: relative;
-    top: -38vw;
-    left: 10vw;
-    z-index: 1;
-}
-
-.border2 {
-    height: 65vw;
-    width: 50vw;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #D3D3D3;
-    position: relative;
-    top: -61vw;
-    z-index: 2;
-}
-
-.borderbillede2 {
-    margin-top: 20vw;
-    height: 85vw;
-    grid-area: billede2;
-    padding-left: 7vw;
-}
-
-.borderbillede {
-    margin-top: 12vw;
-    height: 65vw;
-    grid-area: billede1;
-    padding-left: 15vw
-}
-
-/*STYLING AF BOOK................*/
-#splash_book {
-    background-image: url(img/omos_placeholder.png);
-    height: 45vw;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.kontakt_knap {
-    height: 10vw;
+#udvalg button {
+    height: 11vw;
     width: 32vw;
     background-color: #F5F4EC;
     font-family: montserrat, sans-serif;
@@ -587,7 +307,64 @@ galleri.html {
     font-weight: 350;
     display: flex;
     justify-content: center;
-    padding-top: 2.5vw;
+    margin-top: 10vw;
+    font-size: 0.9em;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+    color: black;
+    border: none;
+}
+
+#inspiration button {
+    height: 11vw;
+    width: 32vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    font-size: 0.9em;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+    color: black;
+    border: none;
+}
+
+#praesentation button {
+    height: 11vw;
+    width: 32vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    justify-content: center;
+    font-size: 0.9em;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 2;
+    color: black;
+    border: none;
+    font-size: 0.5em
+}
+
+
+.kontakt_knap {
+    height: 5vw;
+    width: 16vw;
+    background-color: #F5F4EC;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
     margin-top: 5vw;
     font-size: 0.9em;
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
@@ -597,372 +374,24 @@ galleri.html {
     color: black;
 }
 
-.booktekst {
-    margin-bottom: 10vw;
-    margin-top: 10vw
-}
-
-.book_billedecon {
-    height: 90vw
-}
-
-.booktekst h1 {
-    margin-bottom: 2vw
-}
-
-.billede_book {
-    height: 69vw;
-    width: 78vw;
-    background-image: url(img/billedeom3.png);
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 12vw;
-    margin-top: 15vw;
-}
-
-.border_book {
-    height: 70vw;
-    width: 70vw;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #D3C7AC;
-    position: relative;
-    z-index: auto;
-    top: -62vw;
-    left: 12vw;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #F5F4EC;
-    color: white;
-    width: 70vw;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: black;
-    font-family: montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 350;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: #d1cfbf;
-}
-
-/* Add a background color and some padding around the form */
-.container_form {
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-
 
 /*MEDIAQUERIES..............*/
 
-@media only screen and (min-width:600px) {
-    #splash_kontakt {
-        height: 50vw;
-    }
-
-
-    #splash {
-        height: 50vw;
-    }
-
-    #splash2 {
-        height: 50vw;
-    }
-
-    #splash_book {
-        height: 50vw;
-    }
-
-    #findos h1 {
-        padding-bottom: 2vw;
-        font-size: 1.5em;
-    }
-
-}
-
-@media only screen and (max-width:824px) {
-
-    #kategorier,
-    .sortering_dropdown {
-        transform: scale(0);
-        display: none;
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-}
-
-@media only screen and (min-width:435px) {
-    /*
-    #galleri_container {
-        grid-template-rows: 100vw;
-    }
-*/
-
-    .pil {
-        position: relative;
-        top: 40vw;
-        left: 75vw;
-        position: fixed;
-    }
-
-    .pil2 {
-        position: relative;
-        top: 40vw;
-        position: fixed;
-    }
-}
-
-@media only screen and (min-width:500px) {
-    /*
-    #galleri_container {
-        grid-template-rows: 80vw;
-    }
-*/
-
-    #galleri_container {
-        height: 80vh;
-    }
-
-    #smykke_tekst h1 {
-        margin-top: 9vw;
-    }
-}
-
-@media only screen and (min-width:580px) {
-    #galleri_container {
-        padding-top: 5vw
-    }
-
-    #smykke_tekst h1 {
-        margin-top: 15vw
-    }
-}
-
-@media only screen and (min-width:640px) {
-    #galleri_container {
-        padding-top: 6vw
-    }
-
-    #smykke_tekst h1 {
-        margin-top: 15vw;
-    }
-
-    /*
-    #billeder {
-        grid-template-rows: 20vw 25vw 4vw;
-    }
-
-    #galleri_container {
-        grid-template-rows: 70vw;
-    }
-*/
-
-}
-
-@media only screen and (min-width:702px) {
-    #galleri_container {
-        padding-top: 6vw
-    }
-
-    #smykke_tekst h1 {
-        margin-top: 15vw;
-    }
-
-    /*
-    #billeder {
-        grid-template-rows: 15vw 25vw 4vw;
-    }
-
-    #galleri_container {
-        grid-template-rows: 65vw;
-        width: 200vw;
-    }
-*/
-
-}
-
-
-@media only screen and (min-width:732px) {
-    #galleri_container {
-        padding-top: 3vw
-    }
-
-    #smykke_tekst h1 {
-        margin-top: 13vw;
-    }
-
-    /*
-    #billeder {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 30vw 25vw 4vw;
-        grid-gap: 20px;
-        grid-template-areas:
-    }
-
-    #galleri_container {
-        grid-template-rows: 50vw;
-    }
-*/
-
-}
 
 @media only screen and (min-width:824px) {
-
-    #billeder {
-        height: 50vw;
-    }
-
-    #galleri_id main {
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-
-    #smykke_tekst {
-        margin-left: 7vw;
-    }
 
     #menu,
     nav {
         display: block;
     }
 
-    .galleri_header {
+
+
+    #menuknap {
         transform: scale(0);
         display: none;
         transform: translateX(-100%);
         opacity: 0;
-    }
-
-
-
-    #kategorier {
-        display: block;
-    }
-
-
-    .filterknapper {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #F5F4EC;
-        border: none;
-        height: 7vw;
-        width: 12vw;
-    }
-
-    #billeder {
-        max-height: 50vw;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 6vw 6vw 6vw 6vw;
-        grid-gap: 20px;
-    }
-
-    #galleri_id {
-        max-height: 100vw;
-    }
-
-    #kategorier {
-        display: block;
-        background-color: #F5F4EC;
-        display: flex;
-        justify-content: space-around;
-        width: 100vw;
-        height: 7vw;
-        grid-area: kategorier;
-        position: fixed;
-    }
-
-    #galleri_id main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0vw;
-        height: 86vh;
-        grid-template-areas:
-            "nav nav nav nav"
-            "indhold indhold indhold"
-    }
-
-    .valgt {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #F5F4EC;
-        border: none;
-        height: 7vw;
-        width: 12vw;
-        text-decoration: underline;
-    }
-
-    #galleri_container {
-        margin-top: 7.5vw;
-        grid-area: indhold;
-        max-height: 34.5vw;
-    }
-
-    #galleri_id main {}
-
-    #smykke_tekst h1 {
-        margin-top: 0;
-        margin-bottom: 1vw;
-    }
-
-
-    #kontakt_billede {
-        display: block;
-    }
-
-    .kontakt_knap {
-        height: 5vw;
-        width: 16vw;
-        background-color: #F5F4EC;
-        font-family: montserrat, sans-serif;
-        font-style: normal;
-        font-weight: 350;
-        display: flex;
-        justify-content: center;
-        padding-top: 2vw;
-        margin-top: 5vw;
-        font-size: 0.9em;
-        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        text-decoration: none;
-        z-index: 2;
-        color: black;
-    }
-
-
-
-    #om h1 {
-        font-size: 2em;
     }
 
     #menu {
@@ -973,10 +402,11 @@ input[type=submit]:hover {
         color: white;
         position: absolute;
         top: 0;
-        background-color: rgba(0, 0, 0, 0.38);
+        background-color: rgba(0, 0, 0, 0.51);
         position: fixed;
         height: 7vw;
         width: 100%;
+        z-index: 3;
     }
 
     .hjalmar {
@@ -984,190 +414,6 @@ input[type=submit]:hover {
         top: -1vw
     }
 
-    #splash_kontakt {
-        height: 30vw;
-    }
-
-    #splash {
-        height: 30vw;
-    }
-
-    #splash2 {
-        height: 30vw;
-    }
-
-    #splash_book {
-        height: 30vw;
-    }
-
-    #kontakt {}
-
-
-    .omtekst1 {
-        padding-left: 35px;
-        padding-top: 15px;
-    }
-
-    .omtekst2 {
-        width: 40vw;
-    }
-
-
-    #om {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-areas: "billede1 om"
-            "om2 billede2";
-        grid-row-gap: 100px;
-    }
-
-
-    .billedeom2 {
-        background-size: 65%;
-        height: 50vw;
-        margin: 0;
-    }
-
-    .billedeom3 {
-        height: 30vw;
-        width: 30vw;
-        margin-top: 0;
-    }
-
-    .border {
-        height: 30vw;
-        width: 28vw;
-        top: -44vw;
-        left: 4vw;
-    }
-
-    .borderbillede,
-    .borderbillede2 {
-        height: 50vw;
-        margin: 0;
-        padding: 0;
-        width: 10vw;
-    }
-
-    .borderbillede {
-        padding-top: 2vw
-    }
-
-    .borderbillede2 {
-        padding-left: 35px;
-    }
-
-    .border2 {
-        height: 29vw;
-        width: 27vw;
-        top: -26vw;
-        left: 7vw;
-        margin: 0;
-        padding: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    omtekst1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #splash_omos {
-        height: 30vw;
-    }
-
-    #kontakt {
-        flex-direction: row-reverse;
-    }
-
-    #kontakt .book_knap {
-        height: 5vw;
-        width: 20vw;
-        font-size: 0.8em;
-        padding-top: 1.6vw;
-
-    }
-
-    #kontakt h1 {
-        padding: 0;
-        padding-top: 2.5vw;
-    }
-
-    #kontakt h3 {
-        padding-bottom: 0;
-        padding-top: 3vw;
-    }
-
-    .book_knap {
-        margin-top: 4vw;
-    }
-
-    #kort_billede {
-        margin-top: 8vw;
-        padding-top: 0;
-    }
-
-    .kontakt_tekst {
-        height: 45vw;
-    }
-
-    #kontakt_billede {
-        height: 45vw;
-    }
-
-    .billedekontakt {
-        background-size: 70%;
-        margin-top: 3.5vw;
-    }
-
-    .borderkontakt {
-        height: 31vw;
-        width: 24vw;
-        top: -35vw;
-        left: 5vw;
-    }
-
-    .billede_book {
-        height: 39vw;
-        width: 48vw;
-        background-image: url(img/billedeom3.png);
-        z-index: 1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-right: 12vw;
-        margin-top: 15vw;
-    }
-
-    .border_book {
-        height: 39vw;
-        width: 45vw;
-        border-style: solid;
-        border-width: 4px;
-        border-color: #D3C7AC;
-        position: relative;
-        z-index: auto;
-        top: -34vw;
-        left: 10vw;
-    }
-
-    .book_billedecon {
-        height: 55vw;
-    }
-
-    input[type=submit] {
-        background-color: #F5F4EC;
-        color: white;
-        width: 100%;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        color: black;
-        font-family: montserrat, sans-serif;
-        font-style: normal;
-        font-weight: 350;
-    }
 }
 
 
@@ -1178,77 +424,14 @@ input[type=submit]:hover {
 
 }
 
-/*
-@media only screen and (max-width:750px) {
-    .billedekontakt,
-    .borderkontakt {
-        transform: scale(0);
-        display: none;
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    nav {
-        transform: scale(0);
-        display: none;
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    #kontakt {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-*/
 
-@media only screen and (min-width:1050px) {
-    #findos p {
-        padding-right: 15vw;
-    }
-
-    #kontakt_billede {
-        margin: 0;
-    }
-
-    .billedekontakt {}
-
-    .kontakt_tekst {
-        margin-right: 5vw;
-    }
-
-    .borderkontakt {
-        height: 31vw;
-        width: 24vw;
-        top: -35vw;
-        left: 5vw;
-    }
-
-    #kontakt {
-        margin-bottom: 0;
-    }
-
-
-    #kort_billede {
-        margin-top: 0;
-        height: 20vw
-    }
-
-    main {
-        margin: 2% 10%;
-    }
-
-    .billedeom2 {
-        height: 30vw;
-        width: 40vw;
-    }
-
-    .border {
-        height: 28vw;
-        width: 25vw;
-        top: -25vw;
-        left: 5vw
-    }
-
-    #om {
-        grid-gap: 10px;
-    }
+#velkommen,
+#praesentation,
+#udvalg,
+#om,
+#findos,
+#kontakt,
+#book_beskrivelse {
+    max-width: 1000px;
+    margin: auto;
 }

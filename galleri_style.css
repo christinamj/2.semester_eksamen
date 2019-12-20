@@ -1,0 +1,480 @@
+.galleri_header {
+    color: black;
+    background-color: #F5F4EC;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-area: header;
+    top: 0;
+}
+
+.kategorih1 {
+    padding-top: 5vw;
+    padding-left: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kategori {
+    padding-top: 4vw;
+    padding-left: 4vw;
+    margin: 0% 10%;
+}
+
+
+
+.galleri_header #menuknap {
+    color: black;
+    margin: 0;
+    margin: 0% 3%;
+    display: block;
+}
+
+/*
+galleri.html {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#galleri_wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+*/
+.pil {
+    font-size: 1.5em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: 78vw;
+}
+
+.pil2 {
+    font-size: 1.5em;
+    padding-top: 35vw;
+    padding-left: 15vw;
+    padding-top: 0;
+    position: fixed;
+    top: 88vw;
+    left: -12vw;
+}
+
+
+
+#galleri_id main {
+    margin-right: 0;
+    max-height: 95vh;
+}
+
+
+
+#billeder {
+    width: 230vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+#smykke_tekst,
+#smykke_tekst2,
+#smykke_tekst3,
+#smykke_tekst4,
+#smykke_tekst5,
+#smykke_tekst6,
+#smykke_tekst7 {
+    margin-top: 15vh;
+}
+
+#smykke_tekst,
+#smykke_tekst2,
+#smykke_tekst3,
+#smykke_tekst4,
+#smykke_tekst5,
+#smykke_tekst6,
+#smykke_tekst7 h1 {
+    line-height: 150%;
+    margin-top: 22vw
+}
+
+#smykke_tekst,
+#smykke_tekst2,
+#smykke_tekst3,
+#smykke_tekst4,
+#smykke_tekst5,
+#smykke_tekst6,
+#smykke_tekst7 p {
+    line-height: 200%;
+}
+
+.wrap_galleri {
+    display: flex;
+    margin-top: 10vh;
+}
+
+
+#billeder img {
+    width: 100%;
+    height: 38vh;
+    object-fit: cover;
+}
+
+/*
+#galleri_id main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+*/
+
+.superwrap {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width:824px) {
+
+    #kategorier,
+    .sortering_dropdown {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width:500px) {
+    #dropdown_wrap {
+        background-color: #F5F4EC;
+        margin: 0px;
+        z-index: 500;
+        width: 100%;
+        position: fixed;
+        height: 48vw;
+        top: 8vw;
+    }
+
+
+    #billeder img {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+    #galleri_container {
+        height: 80vh;
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 h1 {
+        margin-top: 9vw;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    #galleri_container {
+        padding-top: 5vw
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 h1 {
+        margin-top: 15vw
+    }
+
+    #billeder img {
+        width: 100%;
+        height: 35vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+}
+
+@media only screen and (min-width:640px) {
+    #galleri_container {
+        padding-top: 6vw
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 h1 {
+        margin-top: 15vw;
+    }
+
+    /*
+    #billeder {
+        grid-template-rows: 20vw 25vw 4vw;
+    }
+
+    #galleri_container {
+        grid-template-rows: 70vw;
+    }
+*/
+
+}
+
+@media only screen and (min-width:702px) {
+    #galleri_container {
+        padding-top: 6vw
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 h1 {
+        margin-top: 15vw;
+    }
+
+    #billeder img {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+
+    /*
+    #billeder {
+        grid-template-rows: 15vw 25vw 4vw;
+    }
+
+    #galleri_container {
+        grid-template-rows: 65vw;
+        width: 200vw;
+    }
+*/
+
+}
+
+@media only screen and (min-width:732px) {
+    #galleri_container {
+        padding-top: 3vw
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 h1 {
+        margin-top: 13vw;
+    }
+
+    /*
+    #billeder {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30vw 25vw 4vw;
+        grid-gap: 20px;
+        grid-template-areas:
+    }
+
+    #galleri_container {
+        grid-template-rows: 50vw;
+    }
+*/
+
+}
+
+@media only screen and (min-width:824px) {
+    #galleri_id main {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .pil {
+        top: 35vw;
+    }
+
+    .pil2 {
+
+        top: 35vw;
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 {
+        margin-left: 7vw;
+    }
+
+    .galleri_header {
+        transform: scale(0);
+        display: none;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    #kategorier {
+        display: block;
+    }
+
+    .filterknapper {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F4EC;
+        border: none;
+        height: 7vw;
+        width: 12vw;
+    }
+
+    #galleri_id {
+        max-height: 100vw;
+    }
+
+    #kategorier {
+        display: block;
+        background-color: #F5F4EC;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 11vw;
+        grid-area: kategorier;
+        position: fixed;
+    }
+
+    #galleri_id main {
+        margin-top: 2vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0vw;
+        height: 85vh;
+        grid-template-areas:
+            "nav nav nav nav"
+            "indhold indhold indhold"
+    }
+
+    #billeder img {
+        width: 100%;
+        height: 28vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+
+    #galleri_container {
+        padding-top: 0;
+    }
+
+    #smykke_tekst,
+    #smykke_tekst2,
+    #smykke_tekst3,
+    #smykke_tekst4,
+    #smykke_tekst5,
+    #smykke_tekst6,
+    #smykke_tekst7 {
+        padding-right: 5vw;
+        margin-top: 7vw;
+    }
+
+    .valgt {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #F5F4EC;
+        border: none;
+        height: 7vw;
+        width: 12vw;
+        text-decoration: underline;
+    }
+
+}
+
+@media only screen and (min-width:850px) {
+
+    #billeder img {
+        width: 100%;
+        height: 25vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width:985px) {
+
+    #billeder img {
+        width: 100%;
+        height: 23vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+    .pil {
+        top: 28vw;
+    }
+
+    .pil2 {
+
+        top: 28vw;
+    }
+}
+
+@media only screen and (min-width:1050px) {
+    #billeder img {
+        width: 100%;
+        height: 21vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width:1150px) {
+
+    #billeder img {
+        width: 100%;
+        height: 17vw;
+        object-fit: cover;
+    }
+
+    #billeder {
+        width: 100vw;
+    }
+
+}

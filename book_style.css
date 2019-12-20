@@ -1,0 +1,227 @@
+#splash_book {
+    background-image: url(img/omos_placeholder.png);
+    height: 45vw;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+#splash_book {
+    background-image: url(img/splash_book.jpg);
+    height: 66vw;
+    width: 100vw;
+    background-position: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.booktekst {
+    margin-bottom: 10vw;
+    margin-top: 10vw
+}
+
+.book_billedecon {
+    height: 65vw;
+}
+
+.booktekst h1 {
+    margin-bottom: 2vw
+}
+
+.billede_book {
+    height: 65vw;
+    width: 100%;
+    background-image: url(img/billedeom3.png);
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.book_con {
+    margin-bottom: 20vw;
+}
+
+.border_book {
+    height: 55vw;
+    width: 75vw;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #D3C7AC;
+    position: relative;
+    z-index: auto;
+    top: -49vw;
+    left: 12vw;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F5F4EC;
+    color: white;
+    width: 70vw;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-family: montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 350;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #d1cfbf;
+}
+
+/* Add a background color and some padding around the form */
+.container_form {
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width:600px) {
+    #splash_book {
+        height: 50vw;
+    }
+
+
+}
+
+@media only screen and (min-width:824px) {
+    .book_con {
+        margin-bottom: 0;
+    }
+
+    .kontakt_knap {
+        height: 5vw;
+        width: 16vw;
+        background-color: #F5F4EC;
+        font-family: montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 350;
+        display: flex;
+        justify-content: center;
+        padding-top: 2vw;
+        margin-top: 5vw;
+        font-size: 0.9em;
+        box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        text-decoration: none;
+        z-index: 2;
+        color: black;
+    }
+
+    #splash_book {
+        height: 30vw;
+    }
+
+    .booktekst {
+        margin-top: 0;
+        width: 35vw;
+        margin-left: 8vw;
+    }
+
+    .booktekst p {
+        width: 35vw;
+    }
+
+    .billede_book {
+        height: 30vw;
+        width: 35vw;
+        background-image: url(img/billedeom3.png);
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .book_con {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 10vw;
+        max-height: 60vh;
+    }
+
+    .book_con p {
+        width: 35vw;
+    }
+
+    .border_book {
+        height: 29vw;
+        width: 30vw;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #D3C7AC;
+        position: relative;
+        z-index: auto;
+        top: -26vw;
+        left: 10vw;
+    }
+
+    .book_billedecon {
+        height: 55vw;
+    }
+
+    input[type=submit] {
+        background-color: #F5F4EC;
+        color: white;
+        width: 100%;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: black;
+        font-family: montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 350;
+    }
+
+}
+
+@media only screen and (min-width:1050px) {
+    .billede_book {
+        height: 20vw;
+        width: 25vw;
+    }
+
+    .border_book {
+        height: 18vw;
+        width: 23vw;
+        top: -15vw;
+        left: 5vw;
+    }
+
+    .booktekst {
+        margin-bottom: 0;
+    }
+}

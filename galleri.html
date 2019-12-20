@@ -6,90 +6,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galleri_style.css">
+
 
     <link rel="stylesheet" href="https://use.typekit.net/yfo8alo.css">
 
     <link rel="stylesheet" href="https://use.typekit.net/yfo8alo.css">
+    <style>
+
+    </style>
 </head>
 
 <body id="galleri_id">
-    <div id="galleri_wrapper">
-        <header>
-            <div class="galleri_header">
+    <div class="superwrap">
+        <div id="galleri_wrapper">
+            <header>
+                <div class="galleri_header">
 
-                <div class="kategorih1">
-                    <h3>VÆLG KATEGORI</h3>
+
+                    <div class="kategorih1">
+                        <h3>VÆLG KATEGORI</h3>
+                        <div class="filt_knap">▼</div>
+                    </div>
+
+                    <div id="menuknap">☰</div>
                 </div>
 
-                <div id="menuknap">☰</div>
+                <div id="dropdown_wrap" class="hide">
+
+                    <div class="kat">
+                        <button id="valgt_m" class="filterknapper" data-kategori="first">Udvalgte</button>
+                        <button id="vielse_m" class="filterknapper" data-kategori="vielsesringe">Vielsesringe</button>
+                        <button id="guld_m" class="filterknapper" data-kategori="guldringe">Guldringe</button>
+                        <button id="soelv_m" class="filterknapper" data-kategori="soelvringe">Sølvringe</button>
+                        <button id="hals_m" class="filterknapper" data-kategori="halssmykker">Halskæder</button>
+                        <button id="broch_m" class="filterknapper" data-kategori="brocher">Brocher</button>
+                        <button id="perle_m" class="filterknapper" data-kategori="perlesmykker">Perlesmykker</button>
+                    </div>
+                </div>
+
+
+                <nav></nav>
+            </header>
+
+
+
+            <div id="burger" class="hidden">
+
+                <div id="menuknapluk">X</div>
+
+                <ul id="burger">
+                    <li> <a href="forside.html">FORSIDE
+                        </a></li>
+                    <li> <a href="galleri.html">GALLERI</a>
+                    </li>
+                    <li><a href="omos.html">OM OS</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
             </div>
-            <nav></nav>
-        </header>
 
 
+            <main>
+                <div class="wrap_galleri">
 
-        <div id="burger" class="hidden">
+                    <div id="galleri_container">
+                        <div class="pil">❯</div>
+                        <div class="pil2">❮</div>
+                        <section id="smykke_tekst">
+                            <h1>UNIKKE SMYKKER</h1>
+                            <p>Her på siden kan du se et udvalg<br> af de smykker vi har lavet. Siden<br> fungerer som inspiration, så du<br> selv kan blive inspireret til, hvordan<br> dit smykke skal se ud. Alle vores<br> smykker er håndlavede model<br> smykker, hvilket vil sige, at hvert<br> smykke laves som en unik model.<br> Vi stræber efter at give vores design</p>
+                        </section>
+                        <section id="smykke_tekst2" class="hide">
+                            <h1>VIELSESRINGE</h1>
+                            <p>Som alle vores andre smykker,<br> er vores vielsesringe også <br>håndlavede. I kan derfor vælge<br> præcis det udtryk, som i ønsker<br> ringene skal have.</p>
+                        </section>
+                        <section id="smykke_tekst3" class="hide">
+                            <h1>GULDRINGE</h1>
+                            <p>Guld er et af de mest elegante<br> og eksklusive materialer, som<br> kan bæres til enhver lejlighed.<br> Alle vores guldringe er<br> håndlavede og vil blive fremstillet<br> i samarbejde med kunden, så du <br>som kunde er med inde over hele <br>processen og får et smykke, som<br> får præcis det udtryk du ønsker<br> og et smykke, du kan bære <br>resten af livet.</p>
+                        </section>
+                        <section id="smykke_tekst4" class="hide">
+                            <h1>SØLVRINGE</h1>
+                            <p>Ringe er efterhånden blevet en<br> fast bestanddel hos de fleste<br> kvinder og det er derfor vigtigt,<br> at smykket passer perfekt til<br> personen, som skal bære det.<br> Alle vores ringe er håndlavede<br> og vil blive fremstillet i samarbejde<br> med kunden, så du som kunde <br>er med inde over hele processen<br> og får et smykke, som får præcis<br> det udtryk du ønsker.</p>
+                        </section>
+                        <section id="smykke_tekst5" class="hide">
+                            <h1>HALSKÆDER</h1>
+                            <p>Her kan du se lidt af de halskæder,<br> som vi har lavet gennem tiden.<br> Ligesom alle vores andre smykker,<br> er vores halskæder også håndlavede.<br> De laves i mange forskellige fine <br>former og fuldstændig efter kundens<br> ønsker. Du er som kunde selv med <br>inde over hele processen og du får <br>dermed et helt unikt smykke, lavet <br>specifikt til dig.</p>
+                        </section>
+                        <section id="smykke_tekst6" class="hide">
+                            <h1>BROCHER</h1>
+                            <p>En broche der sidder på en jakke<br> eller en bluse, kan virkelig være<br> med til at sætte stilen og giver <br>lige det ekstra til et fint outfit.<br> På denne side kan du se et lille <br>udvalg af de forskellige brocher, <br>som vi har lavet gennem tiden.</p>
+                        </section>
+                        <section id="smykke_tekst7" class="hide">
+                            <h1>PERLESMYKKER</h1>
+                            <p>Perlesmykker er et af vores <br> specialer. Vi arbejder især meget <br>med tahitiperler, som er nogen <br>af de ædleste perler, der hver<br> især er unik på hver sin måde.<br> Vi har valgt at forske lidt i deres<br> forskellige former og farver, samt<br> at lave nogen “lette” smykker,<br> hvor perlen får lov til virkelig at<br> stå i centrum.</p>
+                        </section>
+                    </div>
+                    <main>
+                        <section id="billeder"></section>
+                    </main>
 
-            <div id="menuknapluk">X</div>
+                </div>
 
-            <ul id="burger">
-                <li> <a href="forside.html">FORSIDE
-                    </a></li>
-                <li> <a href="galleri.html">GALLERI</a>
-                </li>
-                <li><a href="omos.html">OM OS</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
-            </ul>
-        </div>
+                <template>
+                    <article>
 
+                        <img class="smykke" src="" alt="">
+                    </article>
+                </template>
 
-        <main>
+            </main>
+            <div id="kategorier">
+                <h1></h1>
+                <!--            <p class="sorter">sorter efter:</p>-->
+                <div class="kate">
 
-            <div id="galleri_container">
-                <div class="pil">❯</div>
-                <div class="pil2">❮</div>
-                <section id="smykke_tekst">
-                    <h1>UNIKKE SMYKKER</h1>
-                    <p>Her på siden kan du se et udvalg<br> af de smykker vi har lavet. Siden<br> fungerer som inspiration, så du<br> selv kan blive inspireret til, hvordan<br> dit smykke skal se ud. Alle vores<br> smykker er håndlavede model<br> smykker, hvilket vil sige, at hvert<br> smykke laves som en unik model.<br> Vi stræber efter at give vores design
-                </section>
-                <section id="billeder">
-                    <div class="billede1"></div>
-                    <div class="billede2"></div>
-                    <div class="billede3"></div>
-                    <div class="billede4"></div>
-                    <div class="billede5"></div>
-                    <div class="billede6"></div>
-                    <div class="billede7"></div>
-                    <div class="billede8"></div>
-                </section>
-            </div>
-        </main>
-        <div id="kategorier">
-            <h1></h1>
-            <!--            <p class="sorter">sorter efter:</p>-->
-            <div class="kate">
-
-                <!-- data-model er en data attribut som vi har givet navnet model -->
-                <!--
+                    <!-- data-model er en data attribut som vi har givet navnet model -->
+                    <!--
                 <div>
                     <button id="alle" class="filterknapper" data-kategori="Alle">Alle modeller</button>
                 </div>
 -->
-                <!-- OBS NY DIV!!!!--->
-                <div class="sortering_dropdown">
-                    <button id="by" class="filterknapper" data-kategori="alle">Alle</button>
-                    <button id="trek" class="filterknapper" data-kategori="vielsesringe">Vielsesringe</button>
-                    <button class="filterknapper" data-kategori="guldringe">Guldringe</button>
-                    <button id="e" class="filterknapper" data-kategori="sølvringe">Sølvringe</button>
-                    <button id="e" class="filterknapper" data-kategori="halskæder">Halskæder</button>
-                    <button id="e" class="filterknapper" data-kategori="brocher">Brocher</button>
-                    <button id="e" class="filterknapper" data-kategori="perlesmykker">Perlesmykker</button>
+                    <div class="sortering_dropdown">
+                        <button id="valgt" class="filterknapper" data-kategori="first">Udvalgte</button>
+                        <button id="vielse" class="filterknapper" data-kategori="vielsesringe">Vielsesringe</button>
+                        <button id="guld" class="filterknapper" data-kategori="guldringe">Guldringe</button>
+                        <button id="soelv" class="filterknapper" data-kategori="soelvringe">Sølvringe</button>
+                        <button id="hals" class="filterknapper" data-kategori="halssmykker">Halskæder</button>
+                        <button id="broch" class="filterknapper" data-kategori="brocher">Brocher</button>
+                        <button id="perle" class="filterknapper" data-kategori="perlesmykker">Perlesmykker</button>
+
+                    </div>
 
                 </div>
-
             </div>
-        </div>
 
+        </div>
     </div>
     <script src="script.js"></script>
 </body></html>

@@ -1,12 +1,125 @@
+let indhold = [];
+let filter = "first";
+const dest = document.querySelector("#billeder");
+const theTemplatePointer = document.querySelector("template");
 document.addEventListener("DOMContentLoaded", start);
 
 function start() {
+
     hentNav();
     hentFooter();
+    hentJson();
 
+    const filterKnapper = document.querySelectorAll(".filterknapper");
+    filterKnapper.forEach(knap => knap.addEventListener("click", filtrerSmykker));
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
     document.querySelector("#menuknapluk").addEventListener("click", toggleMenu);
+    document.querySelector(".filt_knap").addEventListener("click", filtrerDrop);
+    console.log(this)
+
+    document.querySelector("#guld").addEventListener("click", toggleGuld);
+    document.querySelector("#soelv").addEventListener("click", toggleSoelv);
+    document.querySelector("#vielse").addEventListener("click", toggleVielse);
+    document.querySelector("#hals").addEventListener("click", toggleHals);
+    document.querySelector("#broch").addEventListener("click", toggleBroche);
+    document.querySelector("#perle").addEventListener("click", togglePerle);
+    document.querySelector("#valgt").addEventListener("click", toggleFirst);
+
+    //     Mobil...........
+    document.querySelector("#guld_m").addEventListener("click", toggleGuld);
+    document.querySelector("#soelv_m").addEventListener("click", toggleSoelv);
+    document.querySelector("#vielse_m").addEventListener("click", toggleVielse);
+    document.querySelector("#hals_m").addEventListener("click", toggleHals);
+    document.querySelector("#broch_m").addEventListener("click", toggleBroche);
+    document.querySelector("#perle_m").addEventListener("click", togglePerle);
+    document.querySelector("#valgt_m").addEventListener("click", toggleFirst);
+
 }
+
+
+function toggleVielse() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+
+    document.querySelector("#smykke_tekst2").classList.remove("hide");
+}
+
+function toggleGuld() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+
+    document.querySelector("#smykke_tekst3").classList.remove("hide");
+
+}
+
+function toggleSoelv() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+
+    document.querySelector("#smykke_tekst4").classList.remove("hide");
+}
+
+
+function toggleHals() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+
+    document.querySelector("#smykke_tekst5").classList.remove("hide");
+}
+
+function toggleBroche() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+
+    document.querySelector("#smykke_tekst6").classList.remove("hide");
+}
+
+function togglePerle() {
+    document.querySelector("#smykke_tekst").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+
+    document.querySelector("#smykke_tekst7").classList.remove("hide");
+
+}
+
+function toggleFirst() {
+    document.querySelector("#smykke_tekst7").classList.add("hide");
+    document.querySelector("#smykke_tekst2").classList.add("hide");
+    document.querySelector("#smykke_tekst3").classList.add("hide");
+    document.querySelector("#smykke_tekst4").classList.add("hide");
+    document.querySelector("#smykke_tekst5").classList.add("hide");
+    document.querySelector("#smykke_tekst6").classList.add("hide");
+
+    document.querySelector("#smykke_tekst").classList.remove("hide");
+}
+
+
+
+
 
 function toggleMenu() {
     console.log("toggleMenu");
@@ -21,10 +134,35 @@ function toggleMenu() {
         document.querySelector("#menuknap").classList.toggle("hidden");
     }
 
-    if (document.querySelector(".kategori")) {
-        document.querySelector(".kategori").classList.toggle("hidden");
+    if (document.querySelector(".kategorih1")) {
+        document.querySelector(".kategorih1").classList.toggle("hidden");
     }
 
+    if (document.querySelector(".pil")) {
+        document.querySelector(".pil").classList.toggle("hidden");
+    }
+
+    if (document.querySelector(".pil2")) {
+        document.querySelector(".pil2").classList.toggle("hidden");
+    }
+
+}
+
+function filtrerDrop() {
+    document.querySelector("#dropdown_wrap").classList.remove("hide");
+
+    document.querySelector("#guld_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#soelv_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#vielse_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#hals_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#broch_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#perle_m").addEventListener("click", slutFiltrer);
+    document.querySelector("#valgt_m").addEventListener("click", slutFiltrer);
+
+}
+
+function slutFiltrer() {
+    document.querySelector("#dropdown_wrap").classList.add("hide");
 }
 async function hentNav() {
     //henter nav.html
@@ -46,4 +184,41 @@ async function hentFooter() {
 
     //indsætter footer.html ind i <footer></footer> på alle sider.
     document.querySelector("footer").innerHTML = inclusionFooter;
+}
+
+function filtrerSmykker() {
+    filter = this.dataset.kategori;
+    console.log(filter);
+    visIndhold();
+}
+
+async function hentJson() {
+    const url = "http://josefinewo.dk/kea/10-eksamen/wordpress/wp-json/wp/v2/galleri/?per_page=100";
+
+    //henter data filen
+    let jsonData = await fetch(url);
+    //den hentee ata skal tolkes som json
+    indhold = await jsonData.json();
+    //kald funktion der viser data som json
+    visIndhold();
+}
+
+function visIndhold() {
+    dest.textContent = "";
+    indhold.forEach((smykke) => {
+        smykke.kategori.forEach(k => {
+            if (k == filter) {
+                console.log("jkvdhf", k, filter);
+
+                const theClone = theTemplatePointer.cloneNode(true).content;
+                theClone.querySelector("img").src = smykke.billede.guid;
+                //theClone.querySelector("article").style.backgroundImage = smykke.billede.guid;
+                dest.appendChild(theClone);
+
+            }
+        });
+
+    });
+
+
 }
