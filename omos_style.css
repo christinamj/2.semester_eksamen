@@ -361,14 +361,18 @@
                     width: 35vw;
                 }
 
-                .border {
+                #om .border {
                     height: 28vw;
-                    width: 35vw;
+                    width: 30vw;
                     top: -25vw;
                     left: 3vw
                 }
 
                 #om {
                     grid-gap: 0px;
+                }
+
+                .billedeom2 {
+                    width: 30vw;
                 }
             }
