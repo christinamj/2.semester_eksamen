@@ -183,6 +183,10 @@ footer {
 
 }
 
+footer h3 {
+    font-family: gopher, sans-serif;
+}
+
 .footer_indhold {
     margin: 0% 10%;
     display: flex;
@@ -190,23 +194,26 @@ footer {
 }
 
 .insta {
-    height: 4vw;
-    width: 4vw;
-    background-image: url(img/insta.svg);
+    height: 2.3vh;
+    width: 2.3vw;
 }
 
 .mail {
-    height: 5vw;
-    width: 5vw;
-    background-repeat: no-repeat;
-    background-image: url(img/Tegnebr%C3%A6t%202.svg);
+    height: 3vh;
+    width: 3vw;
     color: white;
+}
+
+.telefon {
+    height: 2.3vh;
+    width: 2.3vw;
 }
 
 .some {
     display: flex;
     justify-content: space-between;
     width: 10vw;
+    padding-top: 2vh;
 }
 
 /*STYLING AF DROPDOWN.........*/
@@ -407,6 +414,10 @@ footer {
         height: 7vw;
         width: 100%;
         z-index: 3;
+    }
+
+    #menu a:hover {
+        color: #D2C7AC;
     }
 
     .hjalmar {
