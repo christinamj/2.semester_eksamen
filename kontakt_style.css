@@ -147,6 +147,11 @@
     grid-area: kort;
 }
 
+iframe {
+    width: 100%;
+    height: 40vh;
+}
+
 .borderkontakt {
     height: 40vw;
     width: 36vw;
