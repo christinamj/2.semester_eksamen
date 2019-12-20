@@ -187,6 +187,8 @@ async function hentFooter() {
 }
 
 function filtrerSmykker() {
+    document.querySelector(".valgt").classList.remove("valgt");
+    this.classList.add("valgt");
     filter = this.dataset.kategori;
     console.log(filter);
     visIndhold();
