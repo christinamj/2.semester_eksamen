@@ -155,19 +155,19 @@
 */
 
             .omtekst1 {
-                height: 65vh;
+                height: 80vh;
             }
 
             .omtekst2 {
-                height: 65vh;
+                height: 80vh;
             }
 
             .borderbillede {
-                height: 65vh;
+                height: 80vh;
             }
 
             .borderbillede2 {
-                height: 65vh;
+                height: 80vh;
             }
 
         }
@@ -191,186 +191,185 @@
             .neo .txt {
                 padding: 18vw 0vw 15vw 0vw;
             }
+        }
 
-            @media only screen and (min-width:600px) {
+        @media only screen and (min-width:600px) {
 
-                #splash_omos {
-                    height: 50vw;
-                }
+            #splash_omos {
+                height: 90vw;
+            }
 
-                .omtekst2 {
-                    height: 75vh;
-                }
+            .omtekst2 {
+                height: 90vh;
+            }
 
-                .borderbillede {
-                    height: 80vh;
-                }
+            .borderbillede {
+                height: 90vh;
+            }
 
-                .borderbillede2 {
-                    height: 80vh;
-                }
+            .borderbillede2 {
+                height: 90vh;
+            }
 
+        }
+
+
+        /* ----- MEDIA QUERY 750 -----*/
+
+        @media only screen and (min-width: 750px) {
+
+            .neo {
+                padding: 10vw 0vw 0vw 0vw;
+                Flex-wrap: nowrap;
+                Flex-basis: 300px;
+                Flex-grow: 1;
+            }
+
+            .neo .img {
+                width: 95%;
+                height: 55vh;
+            }
+
+            .neo .border {
+                width: 95%;
+                height: 55vh;
+                top: -60vh;
+                left: 3vw;
             }
 
 
-            /* ----- MEDIA QUERY 750 -----*/
+            .neo .txt {
+                padding: 2vw 0vw 0vw 4vw;
+                Flex-basis: 300px;
+                Flex-grow: 1;
+            }
 
-            @media only screen and (min-width: 750px) {
+            .neo .img_border {
+                max-height: 45vw;
+            }
 
-                .neo {
-                    padding: 10vw 0vw 0vw 0vw;
-                    Flex-wrap: nowrap;
-                    Flex-basis: 300px;
-                    Flex-grow: 1;
+            /* ----- MEDIA QUERY 850 -----*/
+            @media only screen and (min-width:824px) {
+
+                #om h1 {
+                    font-size: 2em;
                 }
 
+                .omtekst1 {
+                    padding-top: 15px;
+                }
+
+                .omtekst2 {
+                    width: 25vw;
+                }
+
+
+                #om {
+                    max-width: 1000px;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-areas: "billede1 om"
+                        "om2 billede2";
+                    grid-row-gap: 10px;
+                }
+
+                .billedeom2 {
+                    margin: 0;
+                }
+
+                .billedeom3 {
+                    height: 30vw;
+                    width: 30vw;
+                    margin-top: 0;
+                }
+
+                .billedeom2 {
+                    height: 30vw;
+                    width: 30vw;
+                    margin-top: 0;
+                }
+
+                .border {
+                    height: 30vw;
+                    width: 28vw;
+                    top: -25vw;
+                    left: 4vw;
+                }
+
+
+
+                .borderbillede,
+                .borderbillede2 {
+                    height: 45vw;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .borderbillede {
+                    padding-top: 2vw
+                }
+
+
+
+                .border2 {
+                    height: 29vw;
+                    width: 27vw;
+                    top: -26vw;
+                    left: 7vw;
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .omtekst1 {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+
+                #splash_omos {
+                    height: 30vw;
+                }
+
+                .book_knap {
+                    margin-top: 4vw;
+                    height: 4vw;
+                    width: 15vw;
+                    padding-top: 1.3vw;
+                }
+            }
+
+            @media only screen and (min-width: 850px) {
+
                 .neo .img {
-                    width: 95%;
                     height: 55vh;
                 }
 
                 .neo .border {
-                    width: 95%;
                     height: 55vh;
-                    top: -60vh;
-                    left: 3vw;
-                }
-
-
-                .neo .txt {
-                    padding: 2vw 0vw 0vw 4vw;
-                    Flex-basis: 300px;
-                    Flex-grow: 1;
+                    top: -58vh;
                 }
 
                 .neo .img_border {
-                    max-height: 45vw;
+                    max-height: 50vw;
+                }
+            }
+
+            @media only screen and (min-width:1050px) {
+                .billedeom2 {
+                    height: 30vw;
+                    width: 20vw;
                 }
 
-                /* ----- MEDIA QUERY 850 -----*/
-                @media only screen and (min-width:824px) {
-
-                    #om h1 {
-                        font-size: 2em;
-                    }
-
-                    .omtekst1 {
-                        padding-top: 15px;
-                    }
-
-                    .omtekst1 p {
-                        width: 40vw;
-                    }
-
-
-                    #om {
-                        display: grid;
-                        grid-template-columns: auto auto;
-                        grid-template-areas: "billede1 om"
-                            "om2 billede2";
-                        grid-row-gap: 100px;
-                    }
-
-                    .billedeom2 {
-                        margin: 0;
-                    }
-
-                    .billedeom3 {
-                        height: 30vw;
-                        width: 30vw;
-                        margin-top: 0;
-                    }
-
-                    .billedeom2 {
-                        height: 30vw;
-                        width: 30vw;
-                        margin-top: 0;
-                    }
-
-                    .border {
-                        height: 30vw;
-                        width: 28vw;
-                        top: -25vw;
-                        left: 4vw;
-                    }
-
-
-
-                    .borderbillede,
-                    .borderbillede2 {
-                        height: 50vw;
-                        margin: 0;
-                        padding: 0;
-                    }
-
-                    .borderbillede {
-                        padding-top: 2vw
-                    }
-
-                    .borderbillede2 {
-                        padding-left: 7vw;
-                    }
-
-                    .border2 {
-                        height: 29vw;
-                        width: 27vw;
-                        top: -26vw;
-                        left: 7vw;
-                        margin: 0;
-                        padding: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-
-                    .omtekst1 {
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-
-
-                    #splash_omos {
-                        height: 30vw;
-                    }
-
-                    .book_knap {
-                        margin-top: 4vw;
-                        height: 5vw;
-                        width: 15vw;
-                        padding-top: 2vw;
-                    }
+                .border {
+                    height: 28vw;
+                    width: 20vw;
+                    top: -25vw;
+                    left: 5vw
                 }
 
-                @media only screen and (min-width: 850px) {
-
-                    .neo .img {
-                        height: 55vh;
-                    }
-
-                    .neo .border {
-                        height: 55vh;
-                        top: -58vh;
-                    }
-
-                    .neo .img_border {
-                        max-height: 50vw;
-                    }
+                #om {
+                    grid-gap: 0px;
                 }
-
-                @media only screen and (min-width:1050px) {
-                    .billedeom2 {
-                        height: 30vw;
-                        width: 20vw;
-                    }
-
-                    .border {
-                        height: 28vw;
-                        width: 20vw;
-                        top: -25vw;
-                        left: 5vw
-                    }
-
-                    #om {
-                        grid-gap: 10px;
-                    }
-                }
+            }
