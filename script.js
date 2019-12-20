@@ -23,7 +23,7 @@ function start() {
     document.querySelector("#hals").addEventListener("click", toggleHals);
     document.querySelector("#broch").addEventListener("click", toggleBroche);
     document.querySelector("#perle").addEventListener("click", togglePerle);
-    document.querySelector("#valgt").addEventListener("click", toggleFirst);
+    document.querySelector("#udvalgte").addEventListener("click", toggleFirst);
 
     //     Mobil...........
     document.querySelector("#guld_m").addEventListener("click", toggleGuld);
@@ -187,8 +187,7 @@ async function hentFooter() {
 }
 
 function filtrerSmykker() {
-    document.querySelector(".valgt").classList.remove("valgt");
-    this.classList.add("valgt");
+
     filter = this.dataset.kategori;
     console.log(filter);
     visIndhold();

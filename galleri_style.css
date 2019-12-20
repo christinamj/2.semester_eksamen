@@ -254,7 +254,7 @@ galleri.html {
     #smykke_tekst5,
     #smykke_tekst6,
     #smykke_tekst7 h1 {
-        margin-top: 15vw;
+        margin-top: 8vw;
     }
 
     #billeder img {
@@ -285,29 +285,6 @@ galleri.html {
     #galleri_container {
         padding-top: 3vw
     }
-
-    #smykke_tekst,
-    #smykke_tekst2,
-    #smykke_tekst3,
-    #smykke_tekst4,
-    #smykke_tekst5,
-    #smykke_tekst6,
-    #smykke_tekst7 h1 {
-        margin-top: 13vw;
-    }
-
-    /*
-    #billeder {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 30vw 25vw 4vw;
-        grid-gap: 20px;
-        grid-template-areas:
-    }
-
-    #galleri_container {
-        grid-template-rows: 50vw;
-    }
-*/
 
 }
 
@@ -375,7 +352,7 @@ galleri.html {
             "indhold indhold indhold"
     }
 
-    .filterknapper {
+    .sortering_dropdown button {
         font-family: 'Montserrat', sans-serif;
         background-color: #F5F4EC;
         border: none;
@@ -406,7 +383,6 @@ galleri.html {
     #smykke_tekst6,
     #smykke_tekst7 {
         padding-right: 5vw;
-        margin-top: 7vw;
     }
 
     .valgt {
